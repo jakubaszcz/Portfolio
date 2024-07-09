@@ -1,10 +1,6 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-
 function Contact() {
     return (
         <div>
-            <Header/>
             <div className="contact-container">
                 <div className="contact-container-title">
                     <p className="contact-container-title-text">
@@ -30,7 +26,6 @@ function Contact() {
                     <i className="bi bi-microsoft"></i>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 }

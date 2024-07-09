@@ -1,11 +1,9 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-
 function Work() {
     return (
         <div>
-            <Header/>
-            <Footer/>
+            <div className="work-container">
+
+            </div>
         </div>
     );
 }

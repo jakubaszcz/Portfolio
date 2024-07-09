@@ -9,18 +9,18 @@ function Header() {
             <div className="header-container-list">
                 <ul className="header-container-list-items">
                     <li>
-                        <a href="/work">
-                            Work
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact">
-                            Contact
+                        <a href="">
+                            About
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            Resume
+                            Work
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Contact
                         </a>
                     </li>
                 </ul>
