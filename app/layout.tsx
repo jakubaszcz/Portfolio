@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
+import { Inter, Uncial_Antiqua } from "next/font/google";
 import "./globals.css";
+
+const primaryFont = Uncial_Antiqua({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-uncial-antiqua",
+  display: "swap",
+});
+
+const textFont = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -10,8 +24,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      className={`${primaryFont.variable} ${textFont.variable}`}
     >
-      <body>{children}</body>
+      <body className="font-sans">{children}</body>
     </html>
   );
 }

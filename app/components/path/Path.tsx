@@ -1,7 +1,7 @@
 export function Path() {
     return (
-        <div>
+        <section>
 
-        </div>
+        </section>
     )
 }
