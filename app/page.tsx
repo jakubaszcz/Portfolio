@@ -4,6 +4,9 @@ import {Projects} from "@/app/components/projects/Projects";
 import {Header} from "@/app/components/header/Header";
 import {History} from "@/app/components/History/History";
 import {Divider} from "@/app/components/divider/Divider";
+import {Skills} from "@/app/components/skills/Skills";
+import {Contact} from "@/app/components/contact/Contact";
+import {Footer} from "@/app/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +19,11 @@ export default function Home() {
         <Path/>
         <Divider />
         <Projects/>
+        <Divider />
+        <Skills/>
+        <Divider />
+        <Contact/>
+        <Footer/>
     </div>
   );
 }

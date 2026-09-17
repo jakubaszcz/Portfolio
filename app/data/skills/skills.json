@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Languages",
+    "skills": [
+      "C",
+      "C++",
+      "Rust",
+      "Java",
+      "C#",
+      "JavaScript",
+      "TypeScript"
+    ]
+  },
+  {
+    "title": "Frameworks & Libraries",
+    "skills": [
+      "Tauri",
+      "React",
+      "Vue.js",
+      "Tailwind CSS",
+      "Unity",
+      "Godot",
+      "Unreal Engine",
+      "Spring Boot",
+      "JavaFX"
+    ]
+  },
+  {
+    "title": "Tools & OS",
+    "skills": [
+      "Linux",
+      "Windows",
+      "GitHub",
+      "Git",
+      "GitLab"
+    ]
+  }
+]

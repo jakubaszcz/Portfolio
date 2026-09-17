@@ -8,9 +8,9 @@ export function Header() {
                 <nav aria-label="Main navigation" className="flex items-center gap-4 text-xs text-primary-200 sm:gap-7 sm:text-sm">
                     <a href="#path" className="header-link">My path</a>
                     <a href="#projects" className="header-link">Projects</a>
-                    <button type="button" aria-disabled="true" className="header-contact rounded-sm border border-primary-200/30 px-3 py-2 text-primary-100 sm:px-5">
+                    <a href="#contact" className="rounded-sm border border-primary-700 px-3 py-2 text-primary-100 transition-colors hover:border-primary-300 hover:bg-primary-800 sm:px-5">
                         Contact
-                    </button>
+                    </a>
                 </nav>
             </div>
         </header>
