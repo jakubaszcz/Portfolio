@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import type { CSSProperties } from "react";
 
 type PathEntry = {
     title: string;
@@ -28,63 +29,69 @@ const entries: PathEntry[] = path;
 export function Path() {
     return (
         <section id="path" className="mx-auto w-full max-w-7xl px-6 py-12 sm:px-10 sm:py-16">
-            <h2 className="mb-6 font-primary text-3xl text-primary-100">My path</h2>
-            <div className="grid gap-5 sm:grid-cols-2">
+            <div className="mb-8 flex items-center gap-6 sm:mb-10">
+                <h2 className="shrink-0 font-primary text-3xl text-primary-100">My path</h2>
+            </div>
+            <div className="grid gap-6 lg:grid-cols-2">
                 {entries.map((entry) => (
                     <article
                         key={`${entry.title}-${entry.year}`}
-                        className="shadow-2xl shadow-primary-500 flex flex-col rounded-xl border border-primary-200/20 bg-primary-950/20 p-6 text-primary-200 sm:p-7"
+                        className="path-card flex min-w-0 flex-col rounded-md border p-6 sm:p-8"
                         style={{
-                            background: entry.colors?.background
-                                ? `linear-gradient(135deg, ${entry.colors.background}, color-mix(in srgb, ${entry.colors.background} 88%, var(--color-primary-950)))`
-                                : undefined,
-                            borderColor: entry.colors?.border,
-                            color: entry.colors?.text,
-                        }}
+                            "--brand-color": entry.colors?.primary ?? "var(--color-primary-500)",
+                        } as CSSProperties}
                     >
-                        <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-primary-300" style={{ color: entry.colors?.accent }}>
-                            <span className="capitalize">{entry.section} · {entry.type}</span>
-                            <span>{entry.year}</span>
+                        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3 border-b border-primary-900/10 pb-4 text-xs text-[#626e65]">
+                            <span className="inline-flex items-center gap-2.5">
+                                <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand-color)]" aria-hidden="true" />
+                                <span className="text-[10px] font-medium uppercase tracking-[0.14em]">{entry.section} · {entry.type}</span>
+                            </span>
+                            <span className="tabular-nums">{entry.year}</span>
                         </div>
-                        <div className="mt-4 flex flex-wrap items-center gap-4">
+                        <div className="mt-6 flex flex-wrap items-center gap-5">
                             {entry.icon && (
-                                <Image src={entry.icon} alt={`Logo ${entry.title}`} width={120} height={48} unoptimized className="h-12 w-auto max-w-30 object-contain" />
+                                <span className="inline-flex min-h-14 min-w-14 items-center justify-center rounded-sm px-3 py-2" style={{ backgroundColor: entry.colors?.background }}>
+                                    <Image src={entry.icon} alt={`Logo ${entry.title}`} width={120} height={48} unoptimized className="h-9 w-auto max-w-24 object-contain" />
+                                </span>
                             )}
-                            <h3 className="font-primary text-2xl text-primary-100" style={{ color: entry.colors?.title }}>{entry.title}</h3>
+                            <h3 className="min-w-0 break-words font-primary text-2xl leading-snug text-primary-900 sm:text-3xl">{entry.title}</h3>
                         </div>
-                        <p className="mt-3 text-sm leading-7">{entry.description}</p>
+                        <p className="mt-5 max-w-prose text-sm leading-7">{entry.description}</p>
                         {!!entry.fields?.length && (
                             <dl className="mt-4 space-y-2 text-sm">
                                 {entry.fields.map((field, index) => (
                                     <div key={`${field.label}-${index}`} className="flex flex-wrap gap-x-2 gap-y-1">
-                                        <dt className="font-medium text-primary-300" style={{ color: entry.colors?.accent }}>{field.label} :</dt>
+                                        <dt className="font-medium text-primary-900">{field.label} :</dt>
                                         <dd className="min-w-0 break-words">{field.value}</dd>
                                     </div>
                                 ))}
                             </dl>
                         )}
                         {!!entry.skills?.length && (
-                            <div className="mt-5">
-                                <h4 className="mb-2 text-xs font-medium">Skills developed</h4>
+                            <div className="mt-7">
+                                <h4 className="mb-3 text-[10px] font-medium uppercase tracking-[0.14em] text-[#626e65]">Skills developed</h4>
                                 <ul className="flex flex-wrap gap-2">
                                     {entry.skills.map((skill, index) => (
-                                        <li key={`${skill}-${index}`} className="max-w-full break-words rounded-full border border-current/20 bg-current/5 px-3 py-1 text-xs">{skill}</li>
+                                        <li key={`${skill}-${index}`} className="path-skill max-w-full break-words rounded-sm border px-2.5 py-1 text-xs leading-5">{skill}</li>
                                     ))}
                                 </ul>
                             </div>
                         )}
                         {entry.url && (
-                            <a
-                                href={entry.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={`Visit ${entry.title} website (opens in a new tab)`}
-                                className="mt-auto inline-flex w-fit items-center gap-2 rounded-sm pt-5 text-sm font-medium underline-offset-4 hover:underline focus-visible:outline-current"
-                                style={{ color: entry.colors?.accent }}
-                            >
-                                Visit website
-                                <ArrowUpRight size={16} aria-hidden="true" />
-                            </a>
+                            <div className="mt-auto pt-7">
+                                <a
+                                    href={entry.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={`Visit ${entry.title} website (opens in a new tab)`}
+                                    className="path-link flex min-h-12 w-full items-center justify-between gap-4 border-t border-primary-900/10 pt-4 text-sm font-medium text-primary-900"
+                                >
+                                    Visit website
+                                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-primary-900/15">
+                                        <ArrowUpRight size={16} aria-hidden="true"/>
+                                    </span>
+                                </a>
+                            </div>
                         )}
                     </article>
                 ))}

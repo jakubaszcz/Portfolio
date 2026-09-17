@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Uncial_Antiqua } from "next/font/google";
+import {Inter, Lobster, Uncial_Antiqua} from "next/font/google";
 import "./globals.css";
 
-const primaryFont = Uncial_Antiqua({
+const primaryFont = Lobster({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-uncial-antiqua",
+  variable: "--font-lobster",
   display: "swap",
 });
 
