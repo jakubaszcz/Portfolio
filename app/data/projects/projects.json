@@ -1,8 +1,16 @@
 [
   {
     "name": "Saesth",
-    "url": "www.saesth.com",
-    "description": "A Software to change your working environment.",
-    "code": "https://github.com/jakubaszcz/Saesth"
+    "url": "https://www.saesth.com",
+    "descriptions": [
+      "Create a relaxing workspace with natural ambient sounds.",
+      "Customize keyboard sounds to make typing more enjoyable.",
+      "Create custom sound packs and switch between them to match your mood."
+    ],
+    "code": "https://github.com/jakubaszcz/Saesth",
+    "images": ["/projects/saesth/screen_one.png", "/projects/saesth/screen_two.png"],
+    "stacks": [
+      "Rust", "Tauri", "React", "TypeScript", "Tailwind CSS"
+    ]
   }
 ]

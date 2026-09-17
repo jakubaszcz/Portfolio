@@ -142,35 +142,42 @@ a:focus-visible {
 }
 
 .path-card {
-  background: #f1f0e9;
-  color: #42564c;
-  border-color: #cdd2c8;
-  border-top: 4px solid color-mix(in srgb, var(--brand-color) 72%, #cdd2c8);
+  background: var(--color-primary-50);
+  color: var(--color-primary-800);
+  border-color: var(--color-primary-200);
+  border-top: 4px solid color-mix(in srgb, var(--brand-color) 72%, var(--color-primary-200));
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .path-card:focus-within {
-  border-color: color-mix(in srgb, var(--brand-color) 45%, #cdd2c8);
-  box-shadow: 0 5px 16px #03120e14;
+  border-color: color-mix(in srgb, var(--brand-color) 45%, var(--color-primary-200));
+  box-shadow: 0 5px 16px color-mix(in srgb, var(--color-primary-950) 8%, transparent);
 }
 
 @media (hover: hover) {
   .path-card:hover {
     transform: translateY(-2px);
-    border-color: color-mix(in srgb, var(--brand-color) 45%, #cdd2c8);
+    border-color: color-mix(in srgb, var(--brand-color) 45%, var(--color-primary-200));
     border-top-color: var(--brand-color);
-    box-shadow: 0 5px 16px #03120e14;
+    box-shadow: 0 5px 16px color-mix(in srgb, var(--color-primary-950) 8%, transparent);
   }
 }
 
 .path-skill {
-  background: #e9ece4;
-  border-color: color-mix(in srgb, var(--brand-color) 18%, #d0d7cc);
+  background: var(--color-primary-100);
+  border-color: color-mix(in srgb, var(--brand-color) 18%, var(--color-primary-200));
+}
+
+.project-gallery-arrow { cursor: pointer; transition: opacity 180ms ease, background-color 180ms ease; }
+@media (hover: hover) and (pointer: fine) {
+  .project-gallery-hover { opacity: 0; }
+  .project-gallery:hover .project-gallery-hover,
+  .project-gallery:focus-within .project-gallery-hover { opacity: 1; }
 }
 
 .path-link {
   text-decoration: none;
-  text-decoration-color: color-mix(in srgb, var(--brand-color) 35%, #cdd2c8);
+  text-decoration-color: color-mix(in srgb, var(--brand-color) 35%, var(--color-primary-200));
   text-underline-offset: 5px;
   transition: text-decoration-color 180ms ease;
 }
