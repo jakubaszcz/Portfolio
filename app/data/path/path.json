@@ -26,7 +26,7 @@
   },
   {
     "title": "EPI Studio",
-    "type": "association",
+    "type": "organisation",
     "section": "work",
     "year": "Jul 2026 – Present",
     "description": "Developing my web development skills within an open-source association, working with Java, Spring Boot, Vue.js, and TypeScript.",

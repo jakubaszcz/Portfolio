@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 export function Landing() {
     return (
@@ -14,8 +14,8 @@ export function Landing() {
                     <span className="mt-2 block text-primary-200">SZCZUCINSKI</span>
                 </h1>
                 <div className="hero-intro mt-10 flex w-full max-w-xs flex-col justify-center gap-3 sm:w-auto sm:max-w-none sm:flex-row sm:flex-wrap">
-                    <a href="#projects" className="hero-action primary-button">Explore projects <ArrowUpRight size={17} aria-hidden="true" /></a>
                     <a href="#history" className="hero-action secondary-button">Learn about me <ArrowDown size={17} aria-hidden="true" /></a>
+                    <a href="#projects" className="hero-action primary-button">Explore projects <ArrowDown size={17} aria-hidden="true" /></a>
                 </div>
             </div>
         </section>
