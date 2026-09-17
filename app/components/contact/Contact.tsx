@@ -23,10 +23,10 @@ export function Contact() {
                         )}
                     </div>
                     <div className="mt-7 rounded-md border border-primary-700 bg-primary-900 p-6">
-                        <div className="flex items-center gap-3"><FileText size={20} className="text-primary-300" aria-hidden="true" /><h3 className="font-primary text-xl text-primary-100">My résumé</h3></div>
+                        <div className="flex items-center gap-3"><FileText size={20} className="text-primary-300" aria-hidden="true" /><h3 className="font-primary text-xl text-primary-100">My curriculum vitae</h3></div>
                         <p className="mt-3 text-sm leading-7 text-primary-200">A closer look at my background, experience, and skills.</p>
                         {contact.cv ? (
-                            <a href={contact.cv} download className="mt-5 inline-flex min-h-11 items-center gap-3 rounded-sm bg-primary-100 px-4 py-2 text-sm font-medium text-primary-900 transition-colors hover:bg-primary-50">Download résumé<Download size={16} aria-hidden="true" /></a>
+                            <a href={contact.cv} download className="mt-5 inline-flex min-h-11 items-center gap-3 rounded-sm bg-primary-100 px-4 py-2 text-sm font-medium text-primary-900 transition-colors hover:bg-primary-50">Download CV<Download size={16} aria-hidden="true" /></a>
                         ) : (
                             <button type="button" disabled className="mt-5 inline-flex min-h-11 items-center gap-3 rounded-sm border border-primary-700 px-4 py-2 text-sm text-primary-300">CV coming soon <Download size={16} aria-hidden="true" /></button>
                         )}
