@@ -3,7 +3,73 @@
     "title": "Epitech",
     "type": "school",
     "section": "studies",
-    "year": "2023-2028",
-    "description": "School specialized in computer science."
+    "year": "2023 - 2028",
+    "description": "School specialized in computer science.",
+    "url": "https://www.epitech.eu/",
+    "icon": "https://www.epitech.eu/wp-content/uploads/logo-epitech-blanc.svg",
+    "skills": [
+      "C",
+      "C++",
+      "Web Development",
+      "React",
+      "TypeScript"
+    ],
+    "colors": {
+      "background": "#013AFB",
+      "border": "#013AFB",
+      "title": "#F2F4F8",
+      "text": "#F2F4F8",
+      "accent": "#F2F4F8",
+      "primary": "#013AFB"
+    },
+    "fields": []
+  },
+  {
+    "title": "EPI Studio",
+    "type": "association",
+    "section": "work",
+    "year": "July 2026 - Now",
+    "description": "EPI Studio is an open source based association.",
+    "url": "https://epistudio.fr/",
+    "icon": "https://epistudio.fr/epi-logo-tete.png",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "Web Development",
+      "VueJS",
+      "TypeScript"
+    ],
+    "colors": {
+      "background": "#f2f1ec",
+      "border": "#dadcd9",
+      "title": "#536056",
+      "text": "#536056",
+      "accent": "#536056",
+      "primary": "#536056"
+    },
+    "fields": []
+  },
+  {
+    "title": "Spinetime",
+    "type": "internship",
+    "section": "work",
+    "year": "July 2023 - Oct 2023",
+    "description": "KinéDuQuotidien is a web app for physiotherapist.",
+    "url": "https://robertkine.fr/",
+    "icon": "https://robertkine.fr/spinetime-logo.svg",
+    "skills": [
+      "Web Development",
+      "React",
+      "TypeScript"
+    ],
+    "colors": {
+      "primary": "#00a8e8",
+      "background": "#ffffff",
+      "border": "#00a8e8",
+      "title": "#1a1a2e",
+      "text": "#1a1a2e",
+      "accent": "#00a8e8"
+    },
+    "fields": []
   }
 ]
