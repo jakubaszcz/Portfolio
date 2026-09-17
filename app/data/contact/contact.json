@@ -3,6 +3,8 @@
   "cv": "/resume/resume.pdf",
   "socials": [
     { "name": "LinkedIn", "url": "https://www.linkedin.com/in/jakub-szczucinski-89b5582bb/" },
-    { "name": "Twitter / X", "url": "https://x.com/onticentity" }
+    { "name": "Twitter / X", "url": "https://x.com/onticentity" },
+    { "name": "Github", "url": "https://github.com/jakubaszcz" },
+    { "name": "Itch.io", "url": "https://onticentity.itch.io/" }
   ]
 }

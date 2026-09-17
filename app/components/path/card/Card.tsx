@@ -25,12 +25,12 @@ type PathEntry = {
 export function Card({ entry }: { entry: PathEntry }) {
     return (
         <article
-            className="path-card flex min-w-0 flex-col rounded-md border p-6 sm:p-8"
+            className="path-card flex min-w-0 flex-col rounded-md border p-5 sm:p-8"
             style={{
                 "--brand-color": entry.colors?.primary ?? "var(--color-primary-500)",
             } as CSSProperties}
         >
-            <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3 border-b border-primary-900/10 pb-4 text-xs text-primary-700">
+            <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3 border-b border-primary-200 pb-4 text-xs text-primary-700">
                 <span className="inline-flex items-center gap-2.5">
                     <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand-color)]" aria-hidden="true" />
                     <span className="text-[10px] font-medium uppercase tracking-[0.14em]">{entry.section} · {entry.type}</span>
@@ -73,10 +73,10 @@ export function Card({ entry }: { entry: PathEntry }) {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Visit ${entry.title} website (opens in a new tab)`}
-                        className="path-link flex min-h-12 w-full items-center justify-between gap-4 border-t border-primary-900/10 pt-4 text-sm font-medium text-primary-900"
+                        className="path-link flex min-h-12 w-full items-center justify-between gap-4 border-t border-primary-200 pt-4 text-sm font-medium text-primary-900"
                     >
                         Visit website
-                        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-primary-900/15">
+                        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-primary-200">
                             <ArrowUpRight size={16} aria-hidden="true"/>
                         </span>
                     </a>

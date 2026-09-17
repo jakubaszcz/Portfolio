@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { Media } from "./Media";
 import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useId, useState, useRef, useEffect, type CSSProperties } from "react";
 
@@ -39,11 +39,11 @@ export function Card({ project }: { project: Project }) {
             <button
                 key={direction}
                 type="button"
-                aria-label={direction === -1 ? "Previous screenshot" : "Next screenshot"}
+                aria-label={direction === -1 ? "Previous media" : "Next media"}
                 onClick={() => nextImage(direction)}
-                className={`project-gallery-arrow absolute top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-primary-200/30 bg-primary-950/90 text-primary-50 hover:bg-primary-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-200 ${direction === -1 ? "left-3" : "right-3"} ${inModal ? "" : "project-gallery-hover"}`}
+                className={`project-gallery-arrow absolute top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-sm border border-primary-700 bg-primary-950 text-primary-50 hover:bg-primary-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-200 ${direction === -1 ? "left-3" : "right-3"} ${inModal ? "" : "project-gallery-hover"}`}
             >
-                {direction === -1 ? <ChevronLeft size={22} aria-hidden="true" /> : <ChevronRight size={22} aria-hidden="true" />}
+                {direction === -1 ? <ChevronLeft size={22} aria-hidden="true" className="text-primary-300 " /> : <ChevronRight size={22} aria-hidden="true" className="text-primary-300 duration-300 transition hover:scale-110" />}
             </button>
         ));
     }
@@ -52,12 +52,12 @@ export function Card({ project }: { project: Project }) {
         <article className="path-card flex min-w-0 flex-col overflow-hidden rounded-md border" style={{ "--brand-color": "var(--color-primary-500)" } as CSSProperties}>
             {images.length > 0 && (
                 <>
-                    <div className="project-gallery relative aspect-video border-b border-primary-900/10 bg-primary-950">
-                        <button type="button" onClick={() => setIsOpen(true)} aria-label={`Enlarge ${project.name} screenshot ${activeImage + 1}`} className="absolute inset-0 cursor-zoom-in focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-primary-200">
-                            <Image src={images[activeImage]} alt={`${project.name} ? screenshot ${activeImage + 1}`} fill sizes="(min-width: 1280px) 576px, (min-width: 1024px) 50vw, 100vw" className="object-contain" />
+                    <div className="project-gallery relative aspect-video border-b border-primary-200 bg-primary-950">
+                        <button type="button" onClick={() => setIsOpen(true)} aria-label={`Enlarge ${project.name} media ${activeImage + 1}`} className="absolute inset-0 cursor-zoom-in focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-primary-200">
+                            <Media src={images[activeImage]} label={`${project.name} - media ${activeImage + 1}`} />
                         </button>
                         {arrows()}
-                        <span className="pointer-events-none absolute bottom-3 right-3 rounded-sm bg-primary-950/90 px-2 py-1 text-xs text-primary-100" aria-live="polite" aria-atomic="true">{activeImage + 1} / {images.length}</span>
+                        <span className="pointer-events-none absolute bottom-3 right-3 rounded-sm bg-primary-950 px-2 py-1 text-xs text-primary-300" aria-live="polite" aria-atomic="true">{activeImage + 1} / {images.length}</span>
                     </div>
                     <dialog
                         ref={dialogRef}
@@ -69,28 +69,28 @@ export function Card({ project }: { project: Project }) {
                             if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) setIsOpen(false);
                         }}
                         onKeyDown={(event) => {
-                            if (images.length < 2) return;
+                            if (images.length < 2 || event.target instanceof HTMLVideoElement) return;
                             if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
                                 event.preventDefault();
                                 nextImage(event.key === "ArrowLeft" ? -1 : 1);
                             }
                         }}
-                        className="fixed inset-0 m-auto max-h-[90dvh] w-[94vw] max-w-7xl overflow-auto rounded-md border border-primary-200/20 bg-primary-950 p-0 text-primary-100 backdrop:bg-primary-950/90"
+                        className="fixed inset-0 m-auto max-h-[90dvh] w-[94vw] max-w-7xl overflow-auto border border-primary-800 bg-primary-950 p-0 text-primary-100 backdrop:bg-primary-950"
                     >
-                        <div className="flex items-center justify-between gap-4 border-b border-primary-200/15 px-4 py-3">
+                        <div className="flex items-center justify-between gap-4 px-4 py-3">
                             <h3 id={galleryId} className="text-sm">{project.name} <span className="ml-2 text-primary-300" aria-live="polite">{activeImage + 1} / {images.length}</span></h3>
-                            <button type="button" onClick={() => setIsOpen(false)} aria-label="Close gallery" className="flex h-11 w-11 items-center justify-center rounded-sm hover:bg-primary-800 focus-visible:outline-2 focus-visible:outline-primary-200"><X size={22} aria-hidden="true" /></button>
+                            <button type="button" onClick={() => setIsOpen(false)} aria-label="Close gallery" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-sm hover:bg-primary-800 focus-visible:outline-2 focus-visible:outline-primary-200"><X size={22} aria-hidden="true" /></button>
                         </div>
                         {isOpen && (
-                            <div className="relative h-[70dvh]">
-                                <Image src={images[activeImage]} alt={`${project.name} ? screenshot ${activeImage + 1}`} fill sizes="94vw" className="object-contain" />
+                            <div className="relative h-[60dvh] sm:h-[70dvh]">
+                                <Media src={images[activeImage]} label={`${project.name} - media ${activeImage + 1}`} enlarged />
                                 {arrows(true)}
                             </div>
                         )}
                     </dialog>
                 </>
             )}
-            <div className="flex flex-1 flex-col p-6 sm:p-8">
+            <div className="flex flex-1 flex-col p-5 sm:p-8">
                 <h3 className="break-words font-primary text-2xl leading-snug text-primary-900 sm:text-3xl">{project.name}</h3>
                 <div className="mt-5 space-y-3 text-sm leading-7">
                     {project.descriptions.map((description, index) => <p key={index}>{description}</p>)}
@@ -105,7 +105,7 @@ export function Card({ project }: { project: Project }) {
                 )}
                 {(project.url || project.code) && (
                     <div className="mt-auto pt-7">
-                        <div className="flex flex-wrap gap-x-6 gap-y-2 border-t border-primary-900/10 pt-4">
+                        <div className="flex flex-wrap gap-x-6 gap-y-2 border-t border-primary-200 pt-4">
                             {[
                                 { label: "Visit website", url: project.url },
                                 { label: "Source code", url: project.code },

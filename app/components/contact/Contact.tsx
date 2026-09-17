@@ -5,12 +5,12 @@ const linkStyle = "flex min-h-14 items-center justify-between gap-4 rounded-sm b
 
 export function Contact() {
     return (
-        <section id="contact" aria-labelledby="contact-title" className="mx-auto w-full max-w-7xl px-6 py-12 sm:px-10 sm:py-16">
+        <section id="contact" aria-labelledby="contact-title" className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-10 sm:py-16">
             <h2 id="contact-title" className="mb-8 font-primary text-3xl text-primary-100 sm:mb-10">Contact</h2>
             <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
                 <div>
                     <p className="font-primary text-2xl text-primary-100">Let’s get in touch.</p>
-                    <p className="mt-4 max-w-md text-sm leading-7 text-primary-200">Have a project in mind, an opportunity to share, or simply want to say hello?</p>
+                    <p className="mt-4 max-w-md text-sm leading-7 text-primary-200">Have an idea to build, an opportunity to share, or a question about my work? I would be happy to hear from you. You can reach me by email or find me on the platforms below.</p>
                     <div className="mt-7">
                         <h3 className="mb-3 text-xs uppercase tracking-widest text-primary-300">Professional email</h3>
                         {contact.email ? (
