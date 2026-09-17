@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Inter, Lobster} from "next/font/google";
 import "./globals.css";
+import { siteUrl, siteTitle, siteDescription } from "./lib/site";
 
 const primaryFont = Lobster({
   weight: "400",
@@ -16,8 +17,19 @@ const textFont = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Jakub Szczucinski | Portfolio",
-  description: "Discover my projects, experience, and skills in software and web development.",
+  icons: { icon: { url: "/logo.png", type: "image/png" } },
+  ...(siteUrl ? { metadataBase: new URL(siteUrl), alternates: { canonical: "/" } } : {}),
+  title: { default: siteTitle, template: "%s | Jakub Szczucinski" },
+  authors: [{ name: "Jakub Szczucinski" }],
+  robots: { index: true, follow: true },
+  twitter: { card: "summary_large_image", title: siteTitle, description: siteDescription, creator: "@onticentity", images: ["/og-image.png"] },
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    ...(siteUrl ? { url: siteUrl } : {}), siteName: "Jakub Szczucinski | Portfolio", type: "website", locale: "en_US",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Jakub Szczucinski | Portfolio" }],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
