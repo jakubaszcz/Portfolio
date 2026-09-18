@@ -3,11 +3,12 @@ import { Play } from "lucide-react";
 
 type MediaProps = {
     src: string;
+    unsupportedLabel: string;
     label: string;
     enlarged?: boolean;
 };
 
-export function Media({ src, label, enlarged = false }: MediaProps) {
+export function Media({ src, label, unsupportedLabel, enlarged = false }: MediaProps) {
     const extension = src.split(/[?#]/)[0].split(".").pop()?.toLowerCase();
     const isVideo = ["mp4", "webm", "ogv", "ogg", "mov", "m4v"].includes(extension ?? "");
 
@@ -23,7 +24,7 @@ export function Media({ src, label, enlarged = false }: MediaProps) {
                     preload="metadata"
                     className="h-full w-full object-contain"
                 >
-                    Your browser does not support this video format.
+                    {unsupportedLabel}
                 </video>
                 {!enlarged && (
                     <span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden="true">

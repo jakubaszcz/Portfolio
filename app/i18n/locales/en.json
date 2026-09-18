@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Jakub Szczucinski | Software Developer Portfolio",
+    "description": "Explore Jakub Szczucinski's software, web and game development projects, technical skills, education and professional experience."
+  },
+  "ui": {
+    "home": "Home",
+    "navigation": "Main navigation",
+    "language": "Language",
+    "path": "My path",
+    "projects": "Projects",
+    "contact": "Contact",
+    "portfolio": "Personal portfolio",
+    "aboutMe": "Learn about me",
+    "exploreProjects": "Explore projects",
+    "behindCode": "Behind the code",
+    "historyTitle": "It starts with curiosity.",
+    "pathTitle": "Learning through experience.",
+    "pathDescription": "From studying computer science to building projects with others, each step gives me a new way to think about development. This is the experience behind the work.",
+    "skillsDeveloped": "Skills developed",
+    "visitWebsite": "Visit website",
+    "newTab": "opens in a new tab",
+    "logo": "Logo",
+    "projectsTitle": "Turning curiosity into something real.",
+    "projectsDescription": "From tools for everyday use to games with their own atmosphere, these projects are where I explore ideas, experiment with technology, and learn by building.",
+    "previousMedia": "Previous media",
+    "nextMedia": "Next media",
+    "enlargeMedia": "Enlarge media",
+    "media": "Media",
+    "closeGallery": "Close gallery",
+    "builtWith": "Built with",
+    "sourceCode": "Source code",
+    "videoUnsupported": "Your browser does not support this video format.",
+    "skills": "Skills",
+    "skillsTitle": "The tools behind the ideas.",
+    "skillsDescription": "Each project brings its own questions and challenges. These are the languages, frameworks, and tools I use to explore solutions and keep developing my skills.",
+    "contactTitle": "Let’s get in touch.",
+    "contactDescription": "Have an idea to build, an opportunity to share, or a question about my work? I would be happy to hear from you. You can reach me by email or find me on the platforms below.",
+    "professionalEmail": "Professional email",
+    "emailSoon": "Email coming soon",
+    "cv": "My curriculum vitae",
+    "cvDescription": "A closer look at my background, experience, and skills.",
+    "downloadCv": "Download CV",
+    "cvSoon": "CV coming soon",
+    "online": "Find me online",
+    "soon": "Coming soon",
+    "rights": "All rights reserved.",
+    "footerNavigation": "Footer navigation",
+    "backToTop": "Back to top",
+    "webDevelopment": "Web Development"
+  },
+  "history": [
+    "I have always been curious about how things work. How was a game built? What ideas shaped it? Why was a piece of software designed one way rather than another?",
+    "Those questions are what draw me to development. I enjoy looking beyond what is on the screen to understand the decisions and the code behind it.",
+    "What I love most is that learning never really ends: the more I understand, the more I discover there is still to explore."
+  ],
+  "pathTypes": {
+    "school": "School",
+    "organisation": "Organisation",
+    "internship": "Internship"
+  },
+  "pathSections": {
+    "studies": "Studies",
+    "work": "Work"
+  },
+  "pathEntries": {
+    "epitech": {
+      "year": "2023 – 2028",
+      "description": "Studying computer science, building a foundation in C and C++, and developing web applications with React and TypeScript."
+    },
+    "epi-studio": {
+      "year": "Jul 2026 – Present",
+      "description": "Developing my web development skills within an open-source association, working with Java, Spring Boot, Vue.js, and TypeScript."
+    },
+    "spinetime": {
+      "year": "Jul 2023 – Oct 2023",
+      "description": "A web development internship focused on KinéDuQuotidien, an application for physiotherapists, using React and TypeScript."
+    }
+  },
+  "projectDescriptions": {
+    "saesth": [
+      "Saesth is a desktop application for creating a workspace that feels right for you, combining natural ambient sounds with customizable keyboard sounds.",
+      "Build your own sound packs and switch between them to suit your mood, whether you are working, studying, or simply enjoying a quieter moment.",
+      "Built with Rust, Tauri, and React, the project brings sound customization into a single desktop experience."
+    ],
+    "slot-addict": [
+      "A horror game in which you play as someone consumed by a slot machine addiction, trapped in a dream shaped by that obsession.",
+      "Search for coins, pull the lever, and keep playing while something nearby turns the familiar ritual into a threat.",
+      "Built in Godot with GDScript, the game explores the tension between the urge to play and the part of you that wants to stop."
+    ],
+    "patcher": [
+      "Patcher is a desktop application for Windows and Linux that helps you write and organize release notes in Markdown.",
+      "Create different types of release notes for your projects, with a focus on preparing updates for GitHub releases.",
+      "Built with Java, Gradle, JDBC, and SQLite, it provides a dedicated workspace for documenting what changes between versions."
+    ]
+  },
+  "skillCategories": {
+    "languages": "Languages",
+    "frameworks": "Frameworks & Libraries",
+    "tools": "Tools & OS"
+  },
+  "languageDialog": {
+    "title": "Choose your language",
+    "description": "Explore the portfolio in your preferred language.",
+    "close": "Close language selection",
+    "current": "Current language"
+  }
+}

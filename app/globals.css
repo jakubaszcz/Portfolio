@@ -29,7 +29,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+  scroll-padding-top: 9rem;
+}
+
+@media (min-width: 640px) {
+  html { scroll-padding-top: 7rem; }
 }
 
 body {
@@ -45,6 +49,22 @@ body {
 a:focus-visible {
   outline: 2px solid var(--color-primary-200);
   outline-offset: 6px;
+}
+
+.site-header {
+  background-color: var(--color-primary-950);
+  border-bottom: 1px solid transparent;
+  transition: background-color 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+@media (min-width: 1024px) {
+  .site-header { background-color: transparent; }
+  .site-header[data-scrolled="true"] {
+    background-color: rgb(3 18 14 / 94%);
+    border-bottom-color: var(--color-primary-800);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 16%);
+    backdrop-filter: blur(12px);
+  }
 }
 
 .header-link {

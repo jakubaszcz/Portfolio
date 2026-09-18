@@ -2,11 +2,6 @@
   {
     "name": "Saesth",
     "url": "https://www.saesth.com",
-    "descriptions": [
-      "Saesth is a desktop application for creating a workspace that feels right for you, combining natural ambient sounds with customizable keyboard sounds.",
-      "Build your own sound packs and switch between them to suit your mood, whether you are working, studying, or simply enjoying a quieter moment.",
-      "Built with Rust, Tauri, and React, the project brings sound customization into a single desktop experience."
-    ],
     "code": "https://github.com/jakubaszcz/Saesth",
     "images": [
       "/projects/saesth/screen_one.png",
@@ -18,16 +13,12 @@
       "React",
       "TypeScript",
       "Tailwind CSS"
-    ]
+    ],
+    "id": "saesth"
   },
   {
     "name": "Slot Addict",
     "url": "https://onticentity.itch.io/slot-addict",
-    "descriptions": [
-      "A horror game in which you play as someone consumed by a slot machine addiction, trapped in a dream shaped by that obsession.",
-      "Search for coins, pull the lever, and keep playing while something nearby turns the familiar ritual into a threat.",
-      "Built in Godot with GDScript, the game explores the tension between the urge to play and the part of you that wants to stop."
-    ],
     "code": "",
     "images": [
       "https://img.itch.zone/aW1hZ2UvNDc1NzI2Ni8yODM2NDIyNS5naWY=/original/X%2B1dST.gif",
@@ -37,16 +28,12 @@
       "GDScript",
       "Godot",
       "Godot 3D"
-    ]
+    ],
+    "id": "slot-addict"
   },
   {
     "name": "Patcher",
     "url": "",
-    "descriptions": [
-      "Patcher is a desktop application for Windows and Linux that helps you write and organize release notes in Markdown.",
-      "Create different types of release notes for your projects, with a focus on preparing updates for GitHub releases.",
-      "Built with Java, Gradle, JDBC, and SQLite, it provides a dedicated workspace for documenting what changes between versions."
-    ],
     "code": "https://github.com/jakubaszcz/Patcher",
     "images": [
       "/projects/patcher/screen_one.png",
@@ -57,6 +44,7 @@
       "Gradle",
       "JDBC",
       "SQLite3"
-    ]
+    ],
+    "id": "patcher"
   }
 ]

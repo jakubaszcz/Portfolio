@@ -3,8 +3,6 @@
     "title": "Epitech",
     "type": "school",
     "section": "studies",
-    "year": "2023 – 2028",
-    "description": "Studying computer science, building a foundation in C and C++, and developing web applications with React and TypeScript.",
     "url": "https://www.epitech.eu/",
     "icon": "https://www.epitech.eu/wp-content/uploads/logo-epitech-blanc.svg",
     "skills": [
@@ -22,14 +20,13 @@
       "accent": "#F2F4F8",
       "primary": "#013AFB"
     },
-    "fields": []
+    "fields": [],
+    "id": "epitech"
   },
   {
     "title": "EPI Studio",
     "type": "organisation",
     "section": "work",
-    "year": "Jul 2026 – Present",
-    "description": "Developing my web development skills within an open-source association, working with Java, Spring Boot, Vue.js, and TypeScript.",
     "url": "https://epistudio.fr/",
     "icon": "https://epistudio.fr/epi-logo-tete.png",
     "skills": [
@@ -47,14 +44,13 @@
       "accent": "#536056",
       "primary": "#536056"
     },
-    "fields": []
+    "fields": [],
+    "id": "epi-studio"
   },
   {
     "title": "Spinetime",
     "type": "internship",
     "section": "work",
-    "year": "Jul 2023 – Oct 2023",
-    "description": "A web development internship focused on KinéDuQuotidien, an application for physiotherapists, using React and TypeScript.",
     "url": "https://robertkine.fr/",
     "icon": "https://robertkine.fr/spinetime-logo.svg",
     "skills": [
@@ -70,6 +66,7 @@
       "text": "#1a1a2e",
       "accent": "#00a8e8"
     },
-    "fields": []
+    "fields": [],
+    "id": "spinetime"
   }
 ]

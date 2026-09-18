@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Jakub Szczucinski | Softwareentwickler-Portfolio",
+    "description": "Entdecken Sie die Software-, Web- und Spieleprojekte von Jakub Szczucinski sowie seine technischen Fähigkeiten, Ausbildung und Berufserfahrung."
+  },
+  "ui": {
+    "home": "Startseite",
+    "navigation": "Hauptnavigation",
+    "language": "Sprache",
+    "path": "Werdegang",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "portfolio": "Persönliches Portfolio",
+    "aboutMe": "Über mich",
+    "exploreProjects": "Projekte entdecken",
+    "behindCode": "Hinter dem Code",
+    "historyTitle": "Alles beginnt mit Neugier.",
+    "pathTitle": "Durch Erfahrung lernen.",
+    "pathDescription": "Vom Informatikstudium bis zu gemeinsamen Projekten eröffnet mir jeder Schritt eine neue Sicht auf die Softwareentwicklung. Das sind die Erfahrungen hinter meiner Arbeit.",
+    "skillsDeveloped": "Erworbene Fähigkeiten",
+    "visitWebsite": "Website besuchen",
+    "newTab": "öffnet sich in einem neuen Tab",
+    "logo": "Logo",
+    "projectsTitle": "Aus Neugier wird Wirklichkeit.",
+    "projectsDescription": "Von praktischen Alltagswerkzeugen bis zu Spielen mit eigener Atmosphäre: In diesen Projekten erkunde ich Ideen, experimentiere mit Technologien und lerne durch die Umsetzung.",
+    "previousMedia": "Vorheriges Medium",
+    "nextMedia": "Nächstes Medium",
+    "enlargeMedia": "Medium vergrößern",
+    "media": "Medium",
+    "closeGallery": "Galerie schließen",
+    "builtWith": "Verwendete Technologien",
+    "sourceCode": "Quellcode",
+    "videoUnsupported": "Ihr Browser unterstützt dieses Videoformat nicht.",
+    "skills": "Fähigkeiten",
+    "skillsTitle": "Die Werkzeuge hinter den Ideen.",
+    "skillsDescription": "Jedes Projekt bringt eigene Fragen und Herausforderungen mit sich. Mit diesen Sprachen, Frameworks und Werkzeugen entwickle ich Lösungen und baue meine Fähigkeiten weiter aus.",
+    "contactTitle": "Lassen Sie uns ins Gespräch kommen.",
+    "contactDescription": "Sie möchten eine Idee umsetzen, eine berufliche Möglichkeit teilen oder haben eine Frage zu meiner Arbeit? Ich freue mich auf Ihre Nachricht. Sie erreichen mich per E-Mail oder über die folgenden Plattformen.",
+    "professionalEmail": "Geschäftliche E-Mail",
+    "emailSoon": "E-Mail bald verfügbar",
+    "cv": "Mein Lebenslauf",
+    "cvDescription": "Ein genauerer Einblick in meinen Werdegang, meine Erfahrung und meine Fähigkeiten.",
+    "downloadCv": "Lebenslauf herunterladen",
+    "cvSoon": "Lebenslauf bald verfügbar",
+    "online": "Hier finden Sie mich online",
+    "soon": "Bald verfügbar",
+    "rights": "Alle Rechte vorbehalten.",
+    "footerNavigation": "Fußzeilennavigation",
+    "backToTop": "Nach oben",
+    "webDevelopment": "Webentwicklung"
+  },
+  "history": [
+    "Ich wollte schon immer verstehen, wie Dinge funktionieren. Wie wurde ein Spiel entwickelt? Welche Ideen haben es geprägt? Warum wurde eine Software auf eine bestimmte Weise gestaltet und nicht anders?",
+    "Diese Fragen haben mich zur Softwareentwicklung gebracht. Ich schaue gerne hinter das, was auf dem Bildschirm zu sehen ist, um die Entscheidungen und den Code dahinter zu verstehen.",
+    "Am meisten begeistert mich, dass das Lernen nie wirklich aufhört: Je mehr ich verstehe, desto mehr entdecke ich, was es noch zu erforschen gibt."
+  ],
+  "pathTypes": {
+    "school": "Hochschule",
+    "organisation": "Verein",
+    "internship": "Praktikum"
+  },
+  "pathSections": {
+    "studies": "Studium",
+    "work": "Berufserfahrung"
+  },
+  "pathEntries": {
+    "epitech": {
+      "year": "2023 – 2028",
+      "description": "Informatikstudium mit Grundlagen in C und C++ sowie Entwicklung von Webanwendungen mit React und TypeScript."
+    },
+    "epi-studio": {
+      "year": "Juli 2026 – Heute",
+      "description": "Ausbau meiner Fähigkeiten in der Webentwicklung in einem Open-Source-Verein mit Java, Spring Boot, Vue.js und TypeScript."
+    },
+    "spinetime": {
+      "year": "Juli 2023 – Okt. 2023",
+      "description": "Praktikum in der Webentwicklung mit Schwerpunkt auf KinéDuQuotidien, einer Anwendung für Physiotherapeuten, mit React und TypeScript."
+    }
+  },
+  "projectDescriptions": {
+    "saesth": [
+      "Saesth ist eine Desktop-Anwendung, mit der Sie eine passende Arbeitsatmosphäre schaffen können. Sie verbindet natürliche Umgebungsgeräusche mit anpassbaren Tastaturklängen.",
+      "Erstellen Sie eigene Klangpakete und wechseln Sie je nach Stimmung zwischen ihnen – beim Arbeiten, Lernen oder in einem ruhigen Moment.",
+      "Das mit Rust, Tauri und React entwickelte Projekt vereint die individuelle Klanggestaltung in einer einzigen Desktop-Anwendung."
+    ],
+    "slot-addict": [
+      "Ein Horrorspiel, in dem Sie eine von der Spielsucht beherrschte Person verkörpern, gefangen in einem Traum, der von der Besessenheit mit einem Spielautomaten geprägt ist.",
+      "Suchen Sie nach Münzen, ziehen Sie am Hebel und spielen Sie weiter, während etwas in Ihrer Nähe das vertraute Ritual in eine Bedrohung verwandelt.",
+      "Das mit Godot und GDScript entwickelte Spiel erkundet die Spannung zwischen dem Drang zu spielen und dem Teil von Ihnen, der aufhören möchte."
+    ],
+    "patcher": [
+      "Patcher ist eine Desktop-Anwendung für Windows und Linux, die beim Schreiben und Organisieren von Versionshinweisen in Markdown hilft.",
+      "Erstellen Sie verschiedene Arten von Versionshinweisen für Ihre Projekte, insbesondere zur Vorbereitung von Veröffentlichungen auf GitHub.",
+      "Die mit Java, Gradle, JDBC und SQLite entwickelte Anwendung bietet einen eigenen Arbeitsbereich, um Änderungen zwischen Versionen zu dokumentieren."
+    ]
+  },
+  "skillCategories": {
+    "languages": "Programmiersprachen",
+    "frameworks": "Frameworks & Bibliotheken",
+    "tools": "Werkzeuge & Betriebssysteme"
+  },
+  "languageDialog": {
+    "title": "Sprache wählen",
+    "description": "Entdecken Sie das Portfolio in Ihrer bevorzugten Sprache.",
+    "close": "Sprachauswahl schließen",
+    "current": "Aktuelle Sprache"
+  }
+}

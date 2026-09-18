@@ -16,9 +16,9 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/[[...lang]]/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses `next/font` to load Inter and Lobster, including extended Latin characters.
 
 ## Learn More
 
@@ -37,4 +37,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Portfolio SEO
 
-Set `SITE_URL` to the complete public portfolio origin in `.env.local` and your hosting environment before building. It configures canonical URLs, Open Graph, robots.txt and sitemap.xml. Without it, canonical and sitemap entries are omitted and social images use a development/hosting fallback.
+The public URL is defined in `app/lib/site.ts`; no environment variable is required. Each language has translated metadata, a canonical URL, alternate language links and a sitemap entry. The favicon and social sharing image are shared across languages.
+
+## Translations
+
+- English: `/`, French: `/fr`, German: `/de`, Polish: `/pl`.
+- Edit text in `app/i18n/locales/{en,fr,de,pl}.json`. This includes navigation, accessibility labels, SEO, project descriptions and experience.
+- Links, media, technology names and stable content IDs stay in `app/data/`. When adding a project or experience, add its ID to each dictionary as well.
+- The header selector changes the URL and preserves the current section anchor. Reloading or sharing a URL keeps its language; English remains the default at `/`.
+- The CV download remains the existing PDF. Translating the interface does not translate that document or text embedded in screenshots.
+
+To add a language, copy `en.json`, translate its values without changing its keys, register its native name and Open Graph locale in `app/i18n/config.ts`, and add its JSON loader in `app/i18n/dictionaries.ts`. Routes, the selector, alternate links and sitemap entries are generated from that configuration. Unsupported paths return 404.
+
+Run `npm run test:i18n` to check translation completeness and content IDs, followed by `npm run lint` and `npm run build`.

@@ -1,3 +1,4 @@
+import type { Dictionary } from "@/app/i18n/dictionaries";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import type { CSSProperties } from "react";
@@ -22,7 +23,7 @@ type PathEntry = {
     fields?: { label: string; value: string }[];
 };
 
-export function Card({ entry }: { entry: PathEntry }) {
+export function Card({ entry, labels: t }: { entry: PathEntry; labels: Dictionary["ui"] }) {
     return (
         <article
             className="path-card flex min-w-0 flex-col rounded-md border p-5 sm:p-8"
@@ -40,7 +41,7 @@ export function Card({ entry }: { entry: PathEntry }) {
             <div className="mt-6 flex flex-wrap items-center gap-5">
                 {entry.icon && (
                     <span className="inline-flex min-h-14 min-w-14 items-center justify-center rounded-sm px-3 py-2" style={{ backgroundColor: entry.colors?.background }}>
-                        <Image src={entry.icon} alt={`Logo ${entry.title}`} width={120} height={48} unoptimized className="h-9 w-auto max-w-24 object-contain" />
+                        <Image src={entry.icon} alt={`${t.logo} ${entry.title}`} width={120} height={48} unoptimized className="h-9 w-auto max-w-24 object-contain" />
                     </span>
                 )}
                 <h3 className="min-w-0 break-words font-primary text-2xl leading-snug text-primary-900 sm:text-3xl">{entry.title}</h3>
@@ -58,7 +59,7 @@ export function Card({ entry }: { entry: PathEntry }) {
             )}
             {!!entry.skills?.length && (
                 <div className="mt-7">
-                    <h4 className="mb-3 text-[10px] font-medium uppercase tracking-[0.14em] text-primary-700">Skills developed</h4>
+                    <h4 className="mb-3 text-[10px] font-medium uppercase tracking-[0.14em] text-primary-700">{t.skillsDeveloped}</h4>
                     <ul className="flex flex-wrap gap-2">
                         {entry.skills.map((skill, index) => (
                             <li key={`${skill}-${index}`} className="path-skill max-w-full break-words rounded-sm border px-2.5 py-1 text-xs leading-5">{skill}</li>
@@ -72,10 +73,10 @@ export function Card({ entry }: { entry: PathEntry }) {
                         href={entry.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`Visit ${entry.title} website (opens in a new tab)`}
+                        aria-label={`${entry.title} — ${t.visitWebsite} (${t.newTab})`}
                         className="path-link flex min-h-12 w-full items-center justify-between gap-4 border-t border-primary-200 pt-4 text-sm font-medium text-primary-900"
                     >
-                        Visit website
+                        {t.visitWebsite}
                         <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-primary-200">
                             <ArrowUpRight size={16} aria-hidden="true"/>
                         </span>

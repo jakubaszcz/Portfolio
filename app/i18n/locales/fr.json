@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Jakub Szczucinski | Portfolio de développeur logiciel",
+    "description": "Découvrez les projets logiciels, web et jeux vidéo de Jakub Szczucinski, ses compétences techniques, sa formation et son expérience professionnelle."
+  },
+  "ui": {
+    "home": "Accueil",
+    "navigation": "Navigation principale",
+    "language": "Langue",
+    "path": "Mon parcours",
+    "projects": "Projets",
+    "contact": "Contact",
+    "portfolio": "Portfolio personnel",
+    "aboutMe": "Me découvrir",
+    "exploreProjects": "Découvrir les projets",
+    "behindCode": "Derrière le code",
+    "historyTitle": "Tout commence par la curiosité.",
+    "pathTitle": "Apprendre par l’expérience.",
+    "pathDescription": "Des études en informatique aux projets menés en équipe, chaque étape m’apporte une nouvelle façon d’aborder le développement. Voici le parcours qui nourrit mon travail.",
+    "skillsDeveloped": "Compétences développées",
+    "visitWebsite": "Voir le site",
+    "newTab": "s’ouvre dans un nouvel onglet",
+    "logo": "Logo",
+    "projectsTitle": "Donner vie à la curiosité.",
+    "projectsDescription": "Des outils du quotidien aux jeux à l’atmosphère singulière, ces projets me permettent d’explorer des idées, d’expérimenter des technologies et d’apprendre en créant.",
+    "previousMedia": "Média précédent",
+    "nextMedia": "Média suivant",
+    "enlargeMedia": "Agrandir le média",
+    "media": "Média",
+    "closeGallery": "Fermer la galerie",
+    "builtWith": "Technologies utilisées",
+    "sourceCode": "Code source",
+    "videoUnsupported": "Votre navigateur ne prend pas en charge ce format vidéo.",
+    "skills": "Compétences",
+    "skillsTitle": "Les outils derrière les idées.",
+    "skillsDescription": "Chaque projet apporte son lot de questions et de défis. Voici les langages, frameworks et outils que j’utilise pour explorer des solutions et continuer à progresser.",
+    "contactTitle": "Échangeons ensemble.",
+    "contactDescription": "Une idée à concrétiser, une opportunité à partager ou une question sur mon travail ? Je serai ravi d’en discuter. Vous pouvez me contacter par e-mail ou me retrouver sur les plateformes ci-dessous.",
+    "professionalEmail": "E-mail professionnel",
+    "emailSoon": "E-mail bientôt disponible",
+    "cv": "Mon curriculum vitæ",
+    "cvDescription": "Un aperçu plus détaillé de mon parcours, de mon expérience et de mes compétences.",
+    "downloadCv": "Télécharger le CV",
+    "cvSoon": "CV bientôt disponible",
+    "online": "Me retrouver en ligne",
+    "soon": "Bientôt disponible",
+    "rights": "Tous droits réservés.",
+    "footerNavigation": "Navigation de pied de page",
+    "backToTop": "Retour en haut",
+    "webDevelopment": "Développement web"
+  },
+  "history": [
+    "J’ai toujours été curieux de comprendre comment les choses fonctionnent. Comment un jeu a-t-il été créé ? Quelles idées l’ont façonné ? Pourquoi un logiciel a-t-il été conçu d’une manière plutôt que d’une autre ?",
+    "Ce sont ces questions qui m’attirent vers le développement. J’aime aller au-delà de ce qui apparaît à l’écran pour comprendre les choix et le code qui se cachent derrière.",
+    "Ce qui me plaît le plus, c’est que l’apprentissage ne s’arrête jamais vraiment : plus je comprends, plus je découvre tout ce qu’il reste à explorer."
+  ],
+  "pathTypes": {
+    "school": "École",
+    "organisation": "Association",
+    "internship": "Stage"
+  },
+  "pathSections": {
+    "studies": "Études",
+    "work": "Expérience"
+  },
+  "pathEntries": {
+    "epitech": {
+      "year": "2023 – 2028",
+      "description": "Études en informatique, acquisition de bases solides en C et C++, et développement d’applications web avec React et TypeScript."
+    },
+    "epi-studio": {
+      "year": "Juil. 2026 – Aujourd’hui",
+      "description": "Développement de mes compétences web au sein d’une association open source, avec Java, Spring Boot, Vue.js et TypeScript."
+    },
+    "spinetime": {
+      "year": "Juil. 2023 – Oct. 2023",
+      "description": "Stage en développement web consacré à KinéDuQuotidien, une application pour les kinésithérapeutes, avec React et TypeScript."
+    }
+  },
+  "projectDescriptions": {
+    "saesth": [
+      "Saesth est une application de bureau qui permet de créer un espace de travail à votre image, en associant des ambiances sonores naturelles à des sons de clavier personnalisables.",
+      "Créez vos propres packs de sons et passez de l’un à l’autre selon votre humeur, que vous travailliez, étudiiez ou profitiez simplement d’un moment de calme.",
+      "Développé avec Rust, Tauri et React, le projet réunit la personnalisation sonore dans une seule application de bureau."
+    ],
+    "slot-addict": [
+      "Un jeu d’horreur dans lequel vous incarnez une personne rongée par son addiction aux machines à sous, piégée dans un rêve façonné par cette obsession.",
+      "Cherchez des pièces, tirez le levier et continuez à jouer, tandis qu’une présence transforme ce rituel familier en menace.",
+      "Créé avec Godot et GDScript, le jeu explore la tension entre l’envie de jouer et la part de vous qui voudrait arrêter."
+    ],
+    "patcher": [
+      "Patcher est une application de bureau pour Windows et Linux qui aide à rédiger et à organiser des notes de version en Markdown.",
+      "Créez différents types de notes de version pour vos projets, notamment pour préparer vos publications sur GitHub.",
+      "Développée avec Java, Gradle, JDBC et SQLite, elle offre un espace dédié à la documentation des changements entre les versions."
+    ]
+  },
+  "skillCategories": {
+    "languages": "Langages",
+    "frameworks": "Frameworks et bibliothèques",
+    "tools": "Outils et systèmes"
+  },
+  "languageDialog": {
+    "title": "Choisir une langue",
+    "description": "Découvrez le portfolio dans la langue de votre choix.",
+    "close": "Fermer le choix de langue",
+    "current": "Langue actuelle"
+  }
+}

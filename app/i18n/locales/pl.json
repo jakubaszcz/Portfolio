@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "Jakub Szczucinski | Portfolio programisty",
+    "description": "Poznaj projekty aplikacji, stron internetowych i gier Jakuba Szczucinskiego, jego umiejętności techniczne, wykształcenie i doświadczenie zawodowe."
+  },
+  "ui": {
+    "home": "Strona główna",
+    "navigation": "Nawigacja główna",
+    "language": "Język",
+    "path": "Moja ścieżka",
+    "projects": "Projekty",
+    "contact": "Kontakt",
+    "portfolio": "Portfolio osobiste",
+    "aboutMe": "Poznaj mnie",
+    "exploreProjects": "Zobacz projekty",
+    "behindCode": "Za kulisami kodu",
+    "historyTitle": "Wszystko zaczyna się od ciekawości.",
+    "pathTitle": "Nauka przez doświadczenie.",
+    "pathDescription": "Od studiów informatycznych po wspólne projekty — każdy etap pozwala mi spojrzeć na programowanie z nowej perspektywy. Oto doświadczenie, które stoi za moją pracą.",
+    "skillsDeveloped": "Zdobyte umiejętności",
+    "visitWebsite": "Odwiedź stronę",
+    "newTab": "otwiera się w nowej karcie",
+    "logo": "Logo",
+    "projectsTitle": "Od ciekawości do konkretnych rozwiązań.",
+    "projectsDescription": "Od narzędzi do codziennego użytku po gry z własnym klimatem — w tych projektach odkrywam pomysły, eksperymentuję z technologiami i uczę się poprzez tworzenie.",
+    "previousMedia": "Poprzedni materiał",
+    "nextMedia": "Następny materiał",
+    "enlargeMedia": "Powiększ materiał",
+    "media": "Materiał",
+    "closeGallery": "Zamknij galerię",
+    "builtWith": "Wykorzystane technologie",
+    "sourceCode": "Kod źródłowy",
+    "videoUnsupported": "Twoja przeglądarka nie obsługuje tego formatu wideo.",
+    "skills": "Umiejętności",
+    "skillsTitle": "Narzędzia, które ożywiają pomysły.",
+    "skillsDescription": "Każdy projekt niesie ze sobą nowe pytania i wyzwania. Oto języki, frameworki i narzędzia, których używam do szukania rozwiązań i rozwijania swoich umiejętności.",
+    "contactTitle": "Porozmawiajmy.",
+    "contactDescription": "Masz pomysł do zrealizowania, propozycję współpracy lub pytanie o moją pracę? Chętnie porozmawiam. Możesz napisać do mnie e-mail lub znaleźć mnie na poniższych platformach.",
+    "professionalEmail": "Służbowy adres e-mail",
+    "emailSoon": "Adres e-mail wkrótce",
+    "cv": "Moje CV",
+    "cvDescription": "Więcej informacji o moim wykształceniu, doświadczeniu i umiejętnościach.",
+    "downloadCv": "Pobierz CV",
+    "cvSoon": "CV wkrótce",
+    "online": "Znajdziesz mnie w sieci",
+    "soon": "Wkrótce",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "footerNavigation": "Nawigacja w stopce",
+    "backToTop": "Wróć na górę",
+    "webDevelopment": "Tworzenie aplikacji webowych"
+  },
+  "history": [
+    "Zawsze ciekawiło mnie, jak działają różne rzeczy. Jak powstała dana gra? Jakie pomysły ją ukształtowały? Dlaczego program zaprojektowano w taki, a nie inny sposób?",
+    "To właśnie te pytania przyciągają mnie do programowania. Lubię zaglądać poza to, co widać na ekranie, aby zrozumieć decyzje i kod, które za tym stoją.",
+    "Najbardziej lubię to, że nauka nigdy tak naprawdę się nie kończy: im więcej rozumiem, tym więcej odkrywam rzeczy, które wciąż czekają na poznanie."
+  ],
+  "pathTypes": {
+    "school": "Uczelnia",
+    "organisation": "Stowarzyszenie",
+    "internship": "Staż"
+  },
+  "pathSections": {
+    "studies": "Studia",
+    "work": "Doświadczenie"
+  },
+  "pathEntries": {
+    "epitech": {
+      "year": "2023 – 2028",
+      "description": "Studia informatyczne, zdobywanie podstaw programowania w C i C++ oraz tworzenie aplikacji webowych w React i TypeScript."
+    },
+    "epi-studio": {
+      "year": "Lipiec 2026 – Obecnie",
+      "description": "Rozwijanie umiejętności tworzenia aplikacji webowych w stowarzyszeniu open source, z wykorzystaniem Javy, Spring Boot, Vue.js i TypeScript."
+    },
+    "spinetime": {
+      "year": "Lipiec 2023 – Październik 2023",
+      "description": "Staż w tworzeniu aplikacji webowych przy projekcie KinéDuQuotidien, aplikacji dla fizjoterapeutów, z wykorzystaniem React i TypeScript."
+    }
+  },
+  "projectDescriptions": {
+    "saesth": [
+      "Saesth to aplikacja desktopowa, która pomaga stworzyć dopasowaną do Ciebie atmosferę pracy, łącząc naturalne dźwięki otoczenia z konfigurowalnymi dźwiękami klawiatury.",
+      "Twórz własne zestawy dźwięków i zmieniaj je w zależności od nastroju — podczas pracy, nauki lub chwili odpoczynku.",
+      "Projekt stworzony w Rust, Tauri i React łączy personalizację dźwięku w jednej aplikacji desktopowej."
+    ],
+    "slot-addict": [
+      "Gra grozy, w której wcielasz się w osobę pochłoniętą uzależnieniem od automatu do gier, uwięzioną we śnie ukształtowanym przez tę obsesję.",
+      "Szukaj monet, pociągaj za dźwignię i graj dalej, podczas gdy coś w pobliżu zmienia znajomy rytuał w zagrożenie.",
+      "Gra stworzona w Godot i GDScript bada napięcie między chęcią dalszej gry a tą częścią Ciebie, która chciałaby przestać."
+    ],
+    "patcher": [
+      "Patcher to aplikacja desktopowa dla systemów Windows i Linux, która pomaga pisać i porządkować informacje o wydaniach w formacie Markdown.",
+      "Twórz różne rodzaje informacji o wydaniach dla swoich projektów, ze szczególnym uwzględnieniem przygotowania publikacji na GitHubie.",
+      "Aplikacja zbudowana z użyciem Javy, Gradle, JDBC i SQLite zapewnia osobną przestrzeń do dokumentowania zmian między wersjami."
+    ]
+  },
+  "skillCategories": {
+    "languages": "Języki programowania",
+    "frameworks": "Frameworki i biblioteki",
+    "tools": "Narzędzia i systemy"
+  },
+  "languageDialog": {
+    "title": "Wybierz język",
+    "description": "Przeglądaj portfolio w wybranym języku.",
+    "close": "Zamknij wybór języka",
+    "current": "Aktualny język"
+  }
+}

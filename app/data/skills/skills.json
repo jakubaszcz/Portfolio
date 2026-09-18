@@ -1,6 +1,5 @@
 [
   {
-    "title": "Languages",
     "skills": [
       "C",
       "C++",
@@ -9,10 +8,10 @@
       "C#",
       "JavaScript",
       "TypeScript"
-    ]
+    ],
+    "id": "languages"
   },
   {
-    "title": "Frameworks & Libraries",
     "skills": [
       "Tauri",
       "React",
@@ -23,16 +22,17 @@
       "Unreal Engine",
       "Spring Boot",
       "JavaFX"
-    ]
+    ],
+    "id": "frameworks"
   },
   {
-    "title": "Tools & OS",
     "skills": [
       "Linux",
       "Windows",
       "GitHub",
       "Git",
       "GitLab"
-    ]
+    ],
+    "id": "tools"
   }
 ]
