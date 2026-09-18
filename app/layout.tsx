@@ -17,8 +17,8 @@ const textFont = Inter({
 });
 
 export const metadata: Metadata = {
-  icons: { icon: { url: "/logo.png", type: "image/png" } },
-  ...(siteUrl ? { metadataBase: new URL(siteUrl), alternates: { canonical: "/" } } : {}),
+  metadataBase: new URL(siteUrl),
+  alternates: { canonical: "/" },
   title: { default: siteTitle, template: "%s | Jakub Szczucinski" },
   authors: [{ name: "Jakub Szczucinski" }],
   robots: { index: true, follow: true },
@@ -27,7 +27,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteTitle,
     description: siteDescription,
-    ...(siteUrl ? { url: siteUrl } : {}), siteName: "Jakub Szczucinski | Portfolio", type: "website", locale: "en_US",
+    url: siteUrl,
+    siteName: "Jakub Szczucinski | Portfolio", type: "website", locale: "en_US",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Jakub Szczucinski | Portfolio" }],
   },
 };
