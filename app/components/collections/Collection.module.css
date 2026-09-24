@@ -7,6 +7,14 @@
     --color-primary-50: #241710; --color-primary-100: #33251e; --color-primary-200: #513c30; --color-primary-300: #705e52; --color-primary-400: #a94324; --color-primary-500: #b95835; --color-primary-600: #ab5434; --color-primary-700: #c9b4a1; --color-primary-800: #e1cdb6; --color-primary-900: #f0e5d4; --color-primary-950: #faf5eb;
     color-scheme: light;
 }
+.minecraft {
+    --canvas: #171615; --surface: #262423; --ink: #ede5e2; --muted: #d0c5c0; --accent: #a0d676; --line: #536448; --on-accent: #171615; --display: var(--font-minecraft), monospace;
+    --color-primary-50: #ffffff; --color-primary-100: #ede5e2; --color-primary-200: #d0c5c0; --color-primary-300: #c6bdb8; --color-primary-400: #a0d676; --color-primary-500: #52a535; --color-primary-600: #367b23; --color-primary-700: #6b6562; --color-primary-800: #3d3938; --color-primary-900: #262423; --color-primary-950: #171615;
+}
+.games {
+    --canvas: #120e19; --surface: #251a30; --ink: #eee7fa; --muted: #cbbddd; --accent: #ffad91; --line: #563b72; --on-accent: #251a30; --display: "Courier New", monospace;
+    --color-primary-50: #fff8f5; --color-primary-100: #eee7fa; --color-primary-200: #d7c7ef; --color-primary-300: #b8a0d9; --color-primary-400: #c3a0ff; --color-primary-500: #9565cc; --color-primary-600: #76509d; --color-primary-700: #563b72; --color-primary-800: #382747; --color-primary-900: #251a30; --color-primary-950: #120e19;
+}
 .theme { --font-lobster: var(--display); background: var(--canvas); color: var(--ink); }
 .theme ::selection { background: var(--accent); color: var(--on-accent); }
 .theme a:focus-visible, .theme button:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
@@ -40,6 +48,15 @@
 .editorial { font: italic 100px/1.6 Georgia, serif; letter-spacing: -.1em; }
 .editorial > span { color: var(--accent); }
 .caption { font: 9px monospace; letter-spacing: .13em; color: var(--muted); }
+.symbolArtwork { display: grid; justify-items: center; gap: 20px; color: var(--accent); text-align: center; }
+.symbolArtwork > svg { width: 130px; height: 100px; }
+.artworkTitle { font: 400 clamp(2rem, 4vw, 3rem)/1.1 var(--display); }
+.minecraft .artwork { background: #2a641c; }
+.minecraft .symbolArtwork { color: #ede5e2; }
+.minecraft .caption { color: #fff27a; }
+.minecraft .symbolArtwork > svg { width: 48px; height: 48px; }
+.games .symbolArtwork > svg { color: #c3a0ff; }
+.games .hero h1, .games .featureBody h3 { font-weight: 700; }
 .feature { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
 .featureBody { display: flex; flex-direction: column; align-items: flex-start; flex: 1; padding: 32px; }
 .featureBody h3 { margin-block: 12px 20px; font: 400 30px/1.2 var(--display); }

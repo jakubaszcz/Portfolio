@@ -35,10 +35,10 @@
       "Rapier3D"
     ],
     "description": {
-      "en": "Run a flower shop in this game about floristry.",
-      "fr": "Prenez les commandes d?une boutique de fleurs.",
-      "de": "?bernimm einen Blumenladen.",
-      "pl": "Poprowad? kwiaciarni?."
+      "en": "Run a flower shop, plant flowers and harvest them.\n\nOnce harvested put them to sell, customers will come to buy your precious flowers.\n\n(Game still in development).",
+      "fr": "Gère un magasin de fleurs, plante des fleurs et récolte-les.\n\nUne fois récoltées, mets-les en vente : les clients viendront acheter tes précieuses fleurs.\n\n(Jeu encore en cours de développement).",
+      "de": "Betreibe einen Blumenladen, pflanze Blumen und ernte sie.\n\nSobald du sie geerntet hast, biete sie zum Verkauf an – die Kunden werden kommen, um deine kostbaren Blumen zu kaufen.\n\n(Das Spiel befindet sich noch in der Entwicklung.)",
+      "pl": "Prowadź kwiaciarnię, sadź kwiaty i zbieraj je.\n\nPo zebraniu wystaw je na sprzedaż – klienci będą przychodzić, by kupić Twoje piękne kwiaty.\n\n(Gra jest wciąż w fazie tworzenia)."
     }
   },
   {
@@ -57,10 +57,10 @@
       "Godot 3D"
     ],
     "description": {
-      "en": "Keep a mysterious specimen frozen. It is watching.",
-      "fr": "Gardez un myst?rieux sp?cimen congel?. Il vous observe.",
-      "de": "Halte ein geheimnisvolles Exemplar gefroren. Es beobachtet dich.",
-      "pl": "Utrzymuj tajemniczy okaz w zamro?eniu. On ci? obserwuje."
+      "en": "Scientists have discovered a completely unknown new species.\n\nStudy it while keeping it frozen.\n\nDo your job, but above all, don't wake it up.\n",
+      "fr": "Les scientifiques ont découvert une nouvelle espèce totalement inconnue.\n\nEtudiez la, tout en la contenant gelé.\n\nFaîtes votre boulot, mais surtout ne la réveillez pas\n",
+      "de": "Wissenschaftler haben eine völlig unbekannte neue Art entdeckt.\n\nUntersucht sie, während ihr sie eingefroren aufbewahrt.\n\nMacht eure Arbeit, aber weckt sie auf keinen Fall auf.\n",
+      "pl": "Naukowcy odkryli zupełnie nieznany dotąd gatunek.\n\nZbadajcie go, trzymając go w stanie zamrożonym.\n\nWykonajcie swoją pracę, ale przede wszystkim nie budźcie go.\n"
     }
   },
   {
@@ -78,10 +78,10 @@
       "Godot 2D"
     ],
     "description": {
-      "en": "Discover Hexattack, available on my itch.io page.",
-      "fr": "D?couvrez Hexattack, disponible sur ma page itch.io.",
-      "de": "Entdecke Hexattack auf meiner itch.io-Seite.",
-      "pl": "Odkryj Hexattack na mojej stronie itch.io."
+      "en": "You're all alone in the middle of the plain, completely vulnerable.\n\nDefend yourself against potential enemies and upgrade your gear so you can survive longer and longer.",
+      "fr": "Votre seul tour au plein milieu de la plaine, totalement vulnérable.\n\nDéfendez la des potentiels ennemis, améliorez votre équipement afin de survivre de plus en plus longtemps.",
+      "de": "Du bist ganz allein mitten auf der Ebene und völlig schutzlos.\n\nWehre potenzielle Feinde ab und verbessere deine Ausrüstung, um immer länger zu überleben.",
+      "pl": "Jesteś sam na środku równiny, całkowicie bezbronny.\n\nBroń się przed potencjalnymi wrogami i ulepszaj swój ekwipunek, aby przetrwać coraz dłużej."
     }
   },
   {
@@ -100,10 +100,10 @@
       "Godot 2D"
     ],
     "description": {
-      "en": "Play as a samurai, eliminate enemies without being spotted, and watch out for mines. Created for Godot Wild Jam #82.",
-      "fr": "Incarnez une samoura?, ?liminez vos ennemis sans ?tre rep?r?e et ?vitez les mines. Cr?? pour la Godot Wild Jam #82.",
-      "de": "Spiele eine Samurai, besiege Gegner unbemerkt und meide Minen. Entwickelt f?r die Godot Wild Jam #82.",
-      "pl": "Wciel si? w samurajk?, eliminuj wrog?w niezauwa?enie i unikaj min. Gra stworzona na Godot Wild Jam #82."
+      "en": "You are a samurai desperately trying to make it home.\n\nThere are several enemies in your path—get rid of them without making a sound!\n\nBut watch out for the traps scattered across the terrain!",
+      "fr": "Vous êtes une samouraï qui tente désespéramment de rentrer chez soi.\n\nSur votre route se trouve plusieurs ennemis, débarrassez vous en sans faire de bruit!\n\nMais des faîtes attention au piège éparpillez sur le terrain!",
+      "de": "Du bist ein Samurai, der verzweifelt versucht, nach Hause zurückzukehren.\n\nAuf deinem Weg stehen dir mehrere Feinde im Weg – schalte sie aus, ohne dabei Lärm zu machen!\n\nAber achte auf die Fallen, die überall auf dem Gelände verstreut sind!",
+      "pl": "Jesteś samurajem, który desperacko próbuje wrócić do domu.\n\nNa twojej drodze stoi wielu wrogów – pozbądź się ich bezszelestnie!\n\nUważaj jednak na pułapki rozrzucone po terenie!"
     }
   }
 ]

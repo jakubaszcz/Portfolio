@@ -1,7 +1,6 @@
 import type { TranslationProps } from "@/app/i18n/dictionaries";
 import { CollectionProjectCard } from "@/app/components/collections/Collection";
-import { MinecraftProjectCard } from "@/app/components/minecraft/Minecraft";
-import { GamesProjectCard } from "@/app/components/games/Games";
+import { collectionOrder } from "@/app/components/collections/registry";
 import type { Locale } from "@/app/i18n/config";
 
 export function Projects({ dictionary, locale } : TranslationProps & { locale: Locale }) {
@@ -14,10 +13,7 @@ export function Projects({ dictionary, locale } : TranslationProps & { locale: L
                 <p className="mt-3 text-sm leading-7 text-primary-200 sm:text-base">{t.projectsDescription}</p>
             </div>
             <div className="grid gap-6 lg:grid-cols-2">
-                <CollectionProjectCard kind="software" dictionary={dictionary} locale={locale} />
-                <CollectionProjectCard kind="websites" dictionary={dictionary} locale={locale} />
-                <MinecraftProjectCard dictionary={dictionary} locale={locale} />
-                <GamesProjectCard dictionary={dictionary} locale={locale} />
+                {collectionOrder.map(kind => <CollectionProjectCard key={kind} kind={kind} dictionary={dictionary} locale={locale} />)}
             </div>
         </section>
     )

@@ -2,6 +2,8 @@ import type { Dictionary } from "@/app/i18n/dictionaries";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import type { CSSProperties } from "react";
+import { pathFonts } from "../fonts";
+import styles from "./Card.module.css";
 
 type PathEntry = {
     title: string;
@@ -12,6 +14,7 @@ type PathEntry = {
     icon?: string;
     url?: string;
     skills?: string[];
+    fonts?: { body?: string; heading?: string };
     colors?: {
         primary?: string;
         background?: string;
@@ -26,32 +29,39 @@ type PathEntry = {
 export function Card({ entry, labels: t }: { entry: PathEntry; labels: Dictionary["ui"] }) {
     return (
         <article
-            className="path-card flex min-w-0 flex-col rounded-md border p-5 sm:p-8"
+            className={styles.card}
             style={{
-                "--brand-color": entry.colors?.primary ?? "var(--color-primary-500)",
+                "--path-brand": entry.colors?.primary ?? "#2f8b71",
+                "--path-background": entry.colors?.background ?? "#d6eee5",
+                "--path-border": entry.colors?.border ?? "#adddce",
+                "--path-title": entry.colors?.title ?? "#0b2c24",
+                "--path-text": entry.colors?.text ?? "#15463a",
+                "--path-accent": entry.colors?.accent ?? "#236f5a",
+                "--path-font": pathFonts[entry.fonts?.body ?? "inter"] ?? pathFonts.inter,
+                "--path-heading-font": pathFonts[entry.fonts?.heading ?? "inter"] ?? pathFonts.inter,
             } as CSSProperties}
         >
-            <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3 border-b border-primary-200 pb-4 text-xs text-primary-700">
+            <div className={styles.meta}>
                 <span className="inline-flex items-center gap-2.5">
-                    <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand-color)]" aria-hidden="true" />
+                    <span className={styles.dot} aria-hidden="true" />
                     <span className="text-[10px] font-medium uppercase tracking-[0.14em]">{entry.section} · {entry.type}</span>
                 </span>
                 <span className="tabular-nums">{entry.year}</span>
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-5">
                 {entry.icon && (
-                    <span className="inline-flex min-h-14 min-w-14 items-center justify-center rounded-sm px-3 py-2" style={{ backgroundColor: entry.colors?.background }}>
+                    <span className={styles.logo}>
                         <Image src={entry.icon} alt={`${t.logo} ${entry.title}`} width={120} height={48} unoptimized className="h-9 w-auto max-w-24 object-contain" />
                     </span>
                 )}
-                <h3 className="min-w-0 break-words font-primary text-2xl leading-snug text-primary-900 sm:text-3xl">{entry.title}</h3>
+                <h3 className={styles.title}>{entry.title}</h3>
             </div>
             <p className="mt-5 max-w-prose text-sm leading-7">{entry.description}</p>
             {!!entry.fields?.length && (
                 <dl className="mt-4 space-y-2 text-sm">
                     {entry.fields.map((field, index) => (
                         <div key={`${field.label}-${index}`} className="flex flex-wrap gap-x-2 gap-y-1">
-                            <dt className="font-medium text-primary-900">{field.label} :</dt>
+                            <dt className={styles.fieldLabel}>{field.label} :</dt>
                             <dd className="min-w-0 break-words">{field.value}</dd>
                         </div>
                     ))}
@@ -59,10 +69,10 @@ export function Card({ entry, labels: t }: { entry: PathEntry; labels: Dictionar
             )}
             {!!entry.skills?.length && (
                 <div className="mt-7">
-                    <h4 className="mb-3 text-[10px] font-medium uppercase tracking-[0.14em] text-primary-700">{t.skillsDeveloped}</h4>
+                    <h4 className={styles.skillsHeading}>{t.skillsDeveloped}</h4>
                     <ul className="flex flex-wrap gap-2">
                         {entry.skills.map((skill, index) => (
-                            <li key={`${skill}-${index}`} className="path-skill max-w-full break-words rounded-sm border px-2.5 py-1 text-xs leading-5">{skill}</li>
+                            <li key={`${skill}-${index}`} className={styles.skill}>{skill}</li>
                         ))}
                     </ul>
                 </div>
@@ -74,10 +84,10 @@ export function Card({ entry, labels: t }: { entry: PathEntry; labels: Dictionar
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${entry.title} — ${t.visitWebsite} (${t.newTab})`}
-                        className="path-link flex min-h-12 w-full items-center justify-between gap-4 border-t border-primary-200 pt-4 text-sm font-medium text-primary-900"
+                        className={styles.link}
                     >
                         {t.visitWebsite}
-                        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-primary-200">
+                        <span className={styles.arrow}>
                             <ArrowUpRight size={16} aria-hidden="true"/>
                         </span>
                     </a>

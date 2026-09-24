@@ -2,6 +2,7 @@
 
 import type { Dictionary } from "@/app/i18n/dictionaries";
 import { Media } from "./Media";
+import Image from "next/image";
 import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useId, useState, useRef, useEffect, type CSSProperties } from "react";
 
@@ -12,6 +13,7 @@ type Project = {
     code?: string;
     images?: string[];
     stacks?: string[];
+    titleImage?: { src: string; width: number; height: number };
 };
 
 export function Card({ project, labels: t }: { project: Project; labels: Dictionary["ui"] }) {
@@ -92,7 +94,7 @@ export function Card({ project, labels: t }: { project: Project; labels: Diction
                 </>
             )}
             <div className="flex flex-1 flex-col p-5 sm:p-8">
-                <h3 className="break-words font-primary text-2xl leading-snug text-primary-900 sm:text-3xl">{project.name}</h3>
+                <h3 className="break-words font-primary text-2xl leading-snug text-primary-900 sm:text-3xl">{project.titleImage ? <Image src={project.titleImage.src} width={project.titleImage.width} height={project.titleImage.height} alt={project.name} sizes="(max-width: 767px) 85vw, 500px" className="h-auto w-full object-contain [image-rendering:pixelated]" /> : project.name}</h3>
                 <div className="mt-5 space-y-3 text-sm leading-7">
                     {(project.descriptions ?? []).map((description, index) => <p key={index} className="whitespace-pre-line">{description}</p>)}
                 </div>

@@ -1,11 +1,13 @@
 import type { TranslationProps } from "@/app/i18n/dictionaries";
 import path from "@/app/data/path/path.json";
 import { Card } from "./card/Card";
+import { pathFontStylesheet } from "./fonts";
 
 export function Path({ dictionary } : TranslationProps) {
     const t = dictionary.ui;
     return (
         <section id="path" className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-10 sm:py-16">
+            <link rel="stylesheet" href={pathFontStylesheet} precedence="path-fonts" />
             <div className="mb-8 flex items-center gap-6 sm:mb-10">
                 <h2 className="shrink-0 font-primary text-3xl text-primary-100">{t.path}</h2>
             </div>

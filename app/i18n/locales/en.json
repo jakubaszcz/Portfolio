@@ -57,7 +57,8 @@
   "pathTypes": {
     "school": "School",
     "organisation": "Organisation",
-    "internship": "Internship"
+    "internship": "Internship",
+    "studio": "Studio"
   },
   "pathSections": {
     "studies": "Studies",
@@ -75,6 +76,10 @@
     "spinetime": {
       "year": "Jul 2023 – Oct 2023",
       "description": "A web development internship focused on KinéDuQuotidien, an application for physiotherapists, using React and TypeScript."
+    },
+    "iwy-studio": {
+      "year": "Jul 2026 – Present",
+      "description": "Among of the four creators of the studio, IWY studio main purpose is to create evening type game you can play under three hours."
     }
   },
   "skillCategories": {
@@ -92,7 +97,7 @@
     "title": "My mods.",
     "collection": "Mod collection",
     "intro": "A few blocks, new ideas, and a world of possibilities. Discover the mods I create for Minecraft.",
-    "explore": "See more",
+    "explore": "Explore the mods",
     "back": "Back to portfolio",
     "inventory": "My mod inventory",
     "visitMod": "View mod",

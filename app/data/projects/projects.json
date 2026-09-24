@@ -57,10 +57,10 @@
     ],
     "id": "clipless",
     "description": {
-      "en": "Clipless is a tool for capturing and keeping useful copied content.",
-      "fr": "Clipless est un outil pour capturer et conserver les contenus copiés utiles.",
-      "de": "Clipless ist ein Werkzeug zum Erfassen und Aufbewahren nützlicher kopierter Inhalte.",
-      "pl": "Clipless to narzędzie do przechwytywania i zachowywania przydatnych skopiowanych treści."
+      "en": "Clipless is a lightweight, persistent clipboard manager designed to remove friction from repetitive workflows.\n\nUnlike the default Windows clipboard, Clipless allows you to store, manage, and reuse your copied content over time, without worrying about losing it.",
+      "fr": "Clipless est un gestionnaire de presse-papiers léger et persistant, conçu pour faciliter les tâches répétitives.\n\nContrairement au presse-papiers par défaut de Windows, Clipless vous permet de stocker, de gérer et de réutiliser le contenu que vous avez copié au fil du temps, sans craindre de le perdre.",
+      "de": "Clipless ist ein leichter, persistenter Zwischenablage-Manager, der entwickelt wurde, um wiederkehrende Arbeitsabläufe zu vereinfachen.\n\nIm Gegensatz zur Standard-Zwischenablage von Windows können Sie mit Clipless kopierte Inhalte langfristig speichern, verwalten und wiederverwenden, ohne befürchten zu müssen, dass sie verloren gehen.",
+      "pl": "Clipless to lekki, trwały menedżer schowka, zaprojektowany z myślą o usprawnieniu powtarzalnych procesów pracy.\n\nW przeciwieństwie do domyślnego schowka systemu Windows, Clipless pozwala na przechowywanie, zarządzanie i ponowne wykorzystywanie skopiowanych treści w dłuższej perspektywie czasowej, bez obaw o ich utratę."
     }
   }
 ]

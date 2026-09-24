@@ -57,7 +57,8 @@
   "pathTypes": {
     "school": "Hochschule",
     "organisation": "Verein",
-    "internship": "Praktikum"
+    "internship": "Praktikum",
+    "studio": "Studio"
   },
   "pathSections": {
     "studies": "Studium",
@@ -75,6 +76,10 @@
     "spinetime": {
       "year": "Juli 2023 – Okt. 2023",
       "description": "Praktikum in der Webentwicklung mit Schwerpunkt auf KinéDuQuotidien, einer Anwendung für Physiotherapeuten, mit React und TypeScript."
+    },
+    "iwy-studio": {
+      "year": "Juli 2026 – Heute",
+      "description": "Einer der vier Gründer von IWY Studio. Das Studio entwickelt Spiele für einen Abend, die in weniger als drei Stunden gespielt werden können."
     }
   },
   "skillCategories": {
@@ -92,7 +97,7 @@
     "title": "Meine Mods.",
     "collection": "Mod-Sammlung",
     "intro": "Ein paar Blöcke, neue Ideen und eine Welt voller Möglichkeiten. Entdecke die Mods, die ich für Minecraft entwickle.",
-    "explore": "Mehr entdecken",
+    "explore": "Mods entdecken",
     "back": "Zurück zum Portfolio",
     "inventory": "Mein Mod-Inventar",
     "visitMod": "Mod ansehen",

@@ -57,7 +57,8 @@
   "pathTypes": {
     "school": "École",
     "organisation": "Association",
-    "internship": "Stage"
+    "internship": "Stage",
+    "studio": "Studio"
   },
   "pathSections": {
     "studies": "Études",
@@ -75,6 +76,10 @@
     "spinetime": {
       "year": "Juil. 2023 – Oct. 2023",
       "description": "Stage en développement web consacré à KinéDuQuotidien, une application pour les kinésithérapeutes, avec React et TypeScript."
+    },
+    "iwy-studio": {
+      "year": "Juil. 2026 – Aujourd’hui",
+      "description": "L’un des quatre fondateurs d’IWY Studio, qui crée des jeux pensés pour une soirée, à découvrir en moins de trois heures."
     }
   },
   "skillCategories": {
@@ -92,7 +97,7 @@
     "title": "Mes mods.",
     "collection": "Collection de mods",
     "intro": "Quelques blocs, de nouvelles idées et un monde de possibilités. Découvrez les mods que je crée pour Minecraft.",
-    "explore": "Voir plus",
+    "explore": "Découvrir les mods",
     "back": "Retour au portfolio",
     "inventory": "Mon inventaire de mods",
     "visitMod": "Voir le mod",

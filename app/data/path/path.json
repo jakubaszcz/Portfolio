@@ -1,6 +1,7 @@
 [
   {
     "title": "Epitech",
+    "fonts": { "body": "plex", "heading": "anton" },
     "type": "school",
     "section": "studies",
     "url": "https://www.epitech.eu/",
@@ -25,6 +26,7 @@
   },
   {
     "title": "EPI Studio",
+    "fonts": { "body": "geist", "heading": "geist" },
     "type": "organisation",
     "section": "work",
     "url": "https://epistudio.fr/",
@@ -48,7 +50,31 @@
     "id": "epi-studio"
   },
   {
+    "title": "IWY Studio",
+    "fonts": { "body": "nunito", "heading": "cherryBomb" },
+    "type": "studio",
+    "section": "work",
+    "url": "",
+    "icon": "/paths/iwy/logo.png",
+    "skills": [
+      "Godot",
+      "GDScript",
+      "Game development"
+    ],
+    "colors": {
+      "background": "#ffedc7",
+      "border": "#fc7ed9",
+      "title": "#803465",
+      "text": "#643c51",
+      "accent": "#fc7ed9",
+      "primary": "#fc7ed9"
+    },
+    "fields": [],
+    "id": "iwy-studio"
+  },
+  {
     "title": "Spinetime",
+    "fonts": { "body": "inter", "heading": "inter" },
     "type": "internship",
     "section": "work",
     "url": "https://robertkine.fr/",
