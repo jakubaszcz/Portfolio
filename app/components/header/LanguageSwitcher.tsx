@@ -3,10 +3,11 @@
 import { Check, Languages, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { locales, localeCodes, localePath, type Locale } from "@/app/i18n/config";
+import { locales, localeCodes, localePath, type Locale, type CollectionPage } from "@/app/i18n/config";
 import type { Dictionary } from "@/app/i18n/dictionaries";
 
-export function LanguageSwitcher({ locale, label, messages }: {
+export function LanguageSwitcher({ locale, label, messages, page }: {
+    page?: CollectionPage;
     locale: Locale;
     label: string;
     messages: Dictionary["languageDialog"];
@@ -34,7 +35,7 @@ export function LanguageSwitcher({ locale, label, messages }: {
 
     function chooseLanguage(nextLocale: Locale) {
         setIsOpen(false);
-        if (nextLocale !== locale) router.push(`${localePath(nextLocale)}${window.location.hash}`);
+        if (nextLocale !== locale) router.push(`${localePath(nextLocale, page)}${window.location.hash}`);
     }
 
     return (

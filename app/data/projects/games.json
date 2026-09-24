@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Slot Addict",
+    "url": "https://onticentity.itch.io/slot-addict",
+    "code": "",
+    "images": [
+      "https://img.itch.zone/aW1hZ2UvNDc1NzI2Ni8yODM2NDIyNS5naWY=/original/X%2B1dST.gif",
+      "https://img.itch.zone/aW1hZ2UvNDc1NzI2Ni8yODM2NDE4MC5naWY=/original/G8y01X.gif"
+    ],
+    "stacks": [
+      "GDScript",
+      "Godot",
+      "Godot 3D"
+    ],
+    "id": "slot-addict",
+    "description": {
+      "en": "A horror game in which you play as someone consumed by a slot machine addiction, trapped in a dream shaped by that obsession.\n\nSearch for coins, pull the lever, and keep playing while something nearby turns the familiar ritual into a threat.\n\nBuilt in Godot with GDScript, the game explores the tension between the urge to play and the part of you that wants to stop.",
+      "fr": "Un jeu d’horreur dans lequel vous incarnez une personne rongée par son addiction aux machines à sous, piégée dans un rêve façonné par cette obsession.\n\nCherchez des pièces, tirez le levier et continuez à jouer, tandis qu’une présence transforme ce rituel familier en menace.\n\nCréé avec Godot et GDScript, le jeu explore la tension entre l’envie de jouer et la part de vous qui voudrait arrêter.",
+      "de": "Ein Horrorspiel, in dem Sie eine von der Spielsucht beherrschte Person verkörpern, gefangen in einem Traum, der von der Besessenheit mit einem Spielautomaten geprägt ist.\n\nSuchen Sie nach Münzen, ziehen Sie am Hebel und spielen Sie weiter, während etwas in Ihrer Nähe das vertraute Ritual in eine Bedrohung verwandelt.\n\nDas mit Godot und GDScript entwickelte Spiel erkundet die Spannung zwischen dem Drang zu spielen und dem Teil von Ihnen, der aufhören möchte.",
+      "pl": "Gra grozy, w której wcielasz się w osobę pochłoniętą uzależnieniem od automatu do gier, uwięzioną we śnie ukształtowanym przez tę obsesję.\n\nSzukaj monet, pociągaj za dźwignię i graj dalej, podczas gdy coś w pobliżu zmienia znajomy rytuał w zagrożenie.\n\nGra stworzona w Godot i GDScript bada napięcie między chęcią dalszej gry a tą częścią Ciebie, która chciałaby przestać."
+    }
+  },
+  {
+    "id": "florista",
+    "name": "Florista",
+    "url": "",
+    "code": "",
+    "images": [
+      "/games/florista/florista_one.png",
+      "/games/florista/florista_two.png"
+    ],
+    "stacks": [
+      "Rust",
+      "Bevy",
+      "Rapier3D"
+    ],
+    "description": {
+      "en": "Run a flower shop in this game about floristry.",
+      "fr": "Prenez les commandes d?une boutique de fleurs.",
+      "de": "?bernimm einen Blumenladen.",
+      "pl": "Poprowad? kwiaciarni?."
+    }
+  },
+  {
+    "id": "kic",
+    "name": "Keep It Cryo ? Specimen K.I.C",
+    "url": "https://onticentity.itch.io/kic",
+    "code": "https://github.com/jakubaszcz/Survey",
+    "images": [
+      "https://img.itch.zone/aW1hZ2UvNDQyNTUzMC8yNjM3MDY1MS5wbmc=/original/CeNdow.png",
+      "https://img.itch.zone/aW1hZ2UvNDQyNTUzMC8yNjQxNzg4NS5naWY=/original/7eHzlJ.gif",
+      "https://img.itch.zone/aW1hZ2UvNDQyNTUzMC8yNjM3MDc1NC5wbmc=/original/VP9bVq.png"
+    ],
+    "stacks": [
+      "GDScript",
+      "Godot",
+      "Godot 3D"
+    ],
+    "description": {
+      "en": "Keep a mysterious specimen frozen. It is watching.",
+      "fr": "Gardez un myst?rieux sp?cimen congel?. Il vous observe.",
+      "de": "Halte ein geheimnisvolles Exemplar gefroren. Es beobachtet dich.",
+      "pl": "Utrzymuj tajemniczy okaz w zamro?eniu. On ci? obserwuje."
+    }
+  },
+  {
+    "id": "hexattack",
+    "name": "Hexattack",
+    "url": "https://onticentity.itch.io/hexattack",
+    "code": "",
+    "images": [
+      "https://img.itch.zone/aW1hZ2UvMzk0NjMzNy8zMDIyNTI3OS5wbmc=/original/gqEmbG.png",
+      "https://img.itch.zone/aW1hZ2UvMzk0NjMzNy8zMDIyNTI4My5wbmc=/original/IkPG1i.png"
+    ],
+    "stacks": [
+      "GDScript",
+      "Godot",
+      "Godot 2D"
+    ],
+    "description": {
+      "en": "Discover Hexattack, available on my itch.io page.",
+      "fr": "D?couvrez Hexattack, disponible sur ma page itch.io.",
+      "de": "Entdecke Hexattack auf meiner itch.io-Seite.",
+      "pl": "Odkryj Hexattack na mojej stronie itch.io."
+    }
+  },
+  {
+    "id": "onna-bugeisha",
+    "name": "Onna Bugeisha",
+    "url": "https://onticentity.itch.io/onna-bugeisha",
+    "code": "",
+    "images": [
+      "https://img.itch.zone/aW1hZ2UvMzY2MjA1Mi8yMTgyMjI1NS5wbmc=/original/9qNC1M.png",
+      "https://img.itch.zone/aW1hZ2UvMzY2MjA1Mi8yMTgyMjI1OC5wbmc=/original/WsM0dD.png",
+      "https://img.itch.zone/aW1hZ2UvMzY2MjA1Mi8yMTgyMjI2MC5wbmc=/original/c%2B%2F8mU.png"
+    ],
+    "stacks": [
+      "GDScript",
+      "Godot",
+      "Godot 2D"
+    ],
+    "description": {
+      "en": "Play as a samurai, eliminate enemies without being spotted, and watch out for mines. Created for Godot Wild Jam #82.",
+      "fr": "Incarnez une samoura?, ?liminez vos ennemis sans ?tre rep?r?e et ?vitez les mines. Cr?? pour la Godot Wild Jam #82.",
+      "de": "Spiele eine Samurai, besiege Gegner unbemerkt und meide Minen. Entwickelt f?r die Godot Wild Jam #82.",
+      "pl": "Wciel si? w samurajk?, eliminuj wrog?w niezauwa?enie i unikaj min. Gra stworzona na Godot Wild Jam #82."
+    }
+  }
+]

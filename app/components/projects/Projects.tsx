@@ -1,8 +1,10 @@
 import type { TranslationProps } from "@/app/i18n/dictionaries";
-import projects from "@/app/data/projects/projects.json";
-import {Card} from "@/app/components/projects/card/Card";
+import { CollectionProjectCard } from "@/app/components/collections/Collection";
+import { MinecraftProjectCard } from "@/app/components/minecraft/Minecraft";
+import { GamesProjectCard } from "@/app/components/games/Games";
+import type { Locale } from "@/app/i18n/config";
 
-export function Projects({ dictionary } : TranslationProps) {
+export function Projects({ dictionary, locale } : TranslationProps & { locale: Locale }) {
     const t = dictionary.ui;
     return (
         <section id="projects" className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-10 sm:py-16">
@@ -12,9 +14,10 @@ export function Projects({ dictionary } : TranslationProps) {
                 <p className="mt-3 text-sm leading-7 text-primary-200 sm:text-base">{t.projectsDescription}</p>
             </div>
             <div className="grid gap-6 lg:grid-cols-2">
-                {projects.map((project) => (
-                    <Card key={project.id} project={{ ...project, descriptions: dictionary.projectDescriptions[project.id as keyof typeof dictionary.projectDescriptions] }} labels={t} />
-                ))}
+                <CollectionProjectCard kind="software" dictionary={dictionary} locale={locale} />
+                <CollectionProjectCard kind="websites" dictionary={dictionary} locale={locale} />
+                <MinecraftProjectCard dictionary={dictionary} locale={locale} />
+                <GamesProjectCard dictionary={dictionary} locale={locale} />
             </div>
         </section>
     )

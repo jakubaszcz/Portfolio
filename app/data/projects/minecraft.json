@@ -1,0 +1,22 @@
+[
+  {
+    "id": "in-n-out-barks",
+    "name": "In 'n Out Barks",
+    "image": "/minecraft/in-n-out-barks.png",
+    "imageWidth": 1024,
+    "imageHeight": 128,
+    "code": "https://github.com/Ontic-s-Minecraft-Mods/fabric-ecorce",
+    "url": "https://modrinth.com/mod/in-n-out-barks",
+    "description": "When a log is stripped the bark wont disapear this time.\n\nEach wood type have it's own inner & outer bark.\n\nWith the inner bark, more softer, you can use it for a weak source of food, but still food.\n\nThe outer, more dry, can be use to create fire, or cook food in early game."
+  },
+  {
+    "id": "ruby-update",
+    "name": "Ruby Update",
+    "image": "/minecraft/ruby-update.png",
+    "imageWidth": 1024,
+    "imageHeight": 150,
+    "code": "https://github.com/Ontic-s-Minecraft-Mods/fabric-rubis",
+    "url": "https://modrinth.com/mod/ ",
+    "description": "Ruby were initialy planned as a trading currency with villager.\n\nAs we know, emerald was choosen, du to its shape which isn't similar to any other ore texture.\n\nBut, time has changed, it's time to re-introduce them into the game."
+  }
+]

@@ -41,6 +41,48 @@ body {
   color: var(--foreground);
 }
 
+html[data-theme="minecraft"] {
+  --background: #171615;
+  --foreground: #ede5e2;
+  scroll-padding-top: 2rem;
+  scrollbar-color: #6b6562 #171615;
+}
+
+html[data-theme="minecraft"] ::selection {
+  background: #fff27a;
+  color: #171615;
+}
+
+html[data-theme="games"] {
+  --background: #120e19;
+  --foreground: #eee7fa;
+  scroll-padding-top: 2rem;
+  scrollbar-color: #9565cc #120e19;
+}
+
+html[data-theme="games"] ::selection {
+  background: #ffad91;
+  color: #120e19;
+}
+
+html[data-theme="software"] {
+  --background: #0b1423;
+  --foreground: #e6f1ff;
+  scroll-padding-top: 2rem;
+  scrollbar-color: #4298c9 #0b1423;
+}
+
+html[data-theme="websites"] {
+  --background: #faf5eb;
+  --foreground: #33251e;
+  color-scheme: light;
+  scroll-padding-top: 2rem;
+  scrollbar-color: #a94324 #faf5eb;
+}
+
+html[data-theme="software"] ::selection { background: #7dd3fc; color: #0b1423; }
+html[data-theme="websites"] ::selection { background: #a94324; color: #fff9ef; }
+
 ::selection {
   background: var(--color-primary-300);
   color: var(--color-primary-950);

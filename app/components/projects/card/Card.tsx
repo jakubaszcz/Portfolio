@@ -94,7 +94,7 @@ export function Card({ project, labels: t }: { project: Project; labels: Diction
             <div className="flex flex-1 flex-col p-5 sm:p-8">
                 <h3 className="break-words font-primary text-2xl leading-snug text-primary-900 sm:text-3xl">{project.name}</h3>
                 <div className="mt-5 space-y-3 text-sm leading-7">
-                    {project.descriptions.map((description, index) => <p key={index}>{description}</p>)}
+                    {(project.descriptions ?? []).map((description, index) => <p key={index} className="whitespace-pre-line">{description}</p>)}
                 </div>
                 {!!project.stacks?.length && (
                     <div className="mt-7">

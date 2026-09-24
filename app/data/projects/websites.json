@@ -1,0 +1,30 @@
+[
+  {
+    "id": "portfolio",
+    "name": "Portfolio",
+    "url": "https://www.jakub-szczucinski.com",
+    "code": "https://github.com/jakubaszcz/Portfolio",
+    "images": [],
+    "stacks": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "description": {
+      "en": "My personal portfolio, bringing together my software, websites, games and Minecraft mods. A multilingual space to explore my projects and background.",
+      "fr": "Mon portfolio personnel, qui réunit mes logiciels, sites web, jeux vidéo et mods Minecraft. Un espace multilingue pour découvrir mes projets et mon parcours.",
+      "de": "Mein persönliches Portfolio mit Software, Websites, Spielen und Minecraft-Mods. Ein mehrsprachiger Einblick in meine Projekte und meinen Werdegang.",
+      "pl": "Moje osobiste portfolio z oprogramowaniem, stronami, grami i modami do Minecrafta. Wielojęzyczna przestrzeń prezentująca moje projekty i doświadczenie."
+    }
+  },
+  {
+    "id": "saesth",
+    "name": "Saesth",
+    "url": "https://www.saesth.com",
+    "code": "",
+    "images": [],
+    "stacks": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "description": {
+      "en": "My personal portfolio, bringing together my software, websites, games and Minecraft mods. A multilingual space to explore my projects and background.",
+      "fr": "Mon portfolio personnel, qui réunit mes logiciels, sites web, jeux vidéo et mods Minecraft. Un espace multilingue pour découvrir mes projets et mon parcours.",
+      "de": "Mein persönliches Portfolio mit Software, Websites, Spielen und Minecraft-Mods. Ein mehrsprachiger Einblick in meine Projekte und meinen Werdegang.",
+      "pl": "Moje osobiste portfolio z oprogramowaniem, stronami, grami i modami do Minecrafta. Wielojęzyczna przestrzeń prezentująca moje projekty i doświadczenie."
+    }
+  }
+]

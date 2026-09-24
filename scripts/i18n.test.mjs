@@ -1,11 +1,15 @@
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { test } from "node:test";
+import { descriptionParagraphs } from "../app/lib/descriptions.ts";
 
 const readJson = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url), "utf8"));
 const english = readJson("../app/i18n/locales/en.json");
 const path = readJson("../app/data/path/path.json");
 const projects = readJson("../app/data/projects/projects.json");
+const minecraft = readJson("../app/data/projects/minecraft.json");
+const games = readJson("../app/data/projects/games.json");
+const websites = readJson("../app/data/projects/websites.json");
 const skills = readJson("../app/data/skills/skills.json");
 
 function checkShape(actual, expected, key = "dictionary") {
@@ -27,7 +31,6 @@ for (const file of readdirSync(new URL("../app/i18n/locales/", import.meta.url))
         const dictionary = readJson(`../app/i18n/locales/${file}`);
         checkShape(dictionary, english);
         assert.deepEqual(Object.keys(dictionary.pathEntries).sort(), path.map((entry) => entry.id).sort());
-        assert.deepEqual(Object.keys(dictionary.projectDescriptions).sort(), projects.map((entry) => entry.id).sort());
         assert.deepEqual(Object.keys(dictionary.skillCategories).sort(), skills.map((entry) => entry.id).sort());
         for (const entry of path) {
             assert.ok(dictionary.pathTypes[entry.type], `Missing type: ${entry.type}`);
@@ -35,3 +38,25 @@ for (const file of readdirSync(new URL("../app/i18n/locales/", import.meta.url))
         }
     });
 }
+
+test("All collections store descriptions directly in their project data", () => {
+    for (const collection of [projects, games, minecraft, websites]) {
+        for (const project of collection) {
+            assert.ok(Object.hasOwn(project, "description"), `${project.id}: missing description field`);
+            for (const locale of ["en", "fr", "de", "pl"]) {
+                assert.ok(descriptionParagraphs(project.description, locale).length, `${project.id}: no readable description for ${locale}`);
+            }
+        }
+    }
+});
+
+test("Descriptions accept text, paragraphs and translations without crashing", () => {
+    assert.deepEqual(descriptionParagraphs("First paragraph.\r\n\r\nSecond paragraph."), ["First paragraph.", "Second paragraph."]);
+    assert.deepEqual(descriptionParagraphs({ fr: "Bonjour", en: "Hello" }, "fr"), ["Bonjour"]);
+    assert.deepEqual(descriptionParagraphs({ fr: "", en: "Hello" }, "fr"), ["Hello"]);
+    assert.deepEqual(descriptionParagraphs({ fr: "Bonjour" }, "pl"), ["Bonjour"]);
+    assert.deepEqual(descriptionParagraphs([" One ", "", "Two"]), ["One", "Two"]);
+    for (const missing of [undefined, null, "", {}, { fr: 42 }, 42]) {
+        assert.deepEqual(descriptionParagraphs(missing), []);
+    }
+});

@@ -77,23 +77,6 @@
       "description": "A web development internship focused on KinéDuQuotidien, an application for physiotherapists, using React and TypeScript."
     }
   },
-  "projectDescriptions": {
-    "saesth": [
-      "Saesth is a desktop application for creating a workspace that feels right for you, combining natural ambient sounds with customizable keyboard sounds.",
-      "Build your own sound packs and switch between them to suit your mood, whether you are working, studying, or simply enjoying a quieter moment.",
-      "Built with Rust, Tauri, and React, the project brings sound customization into a single desktop experience."
-    ],
-    "slot-addict": [
-      "A horror game in which you play as someone consumed by a slot machine addiction, trapped in a dream shaped by that obsession.",
-      "Search for coins, pull the lever, and keep playing while something nearby turns the familiar ritual into a threat.",
-      "Built in Godot with GDScript, the game explores the tension between the urge to play and the part of you that wants to stop."
-    ],
-    "patcher": [
-      "Patcher is a desktop application for Windows and Linux that helps you write and organize release notes in Markdown.",
-      "Create different types of release notes for your projects, with a focus on preparing updates for GitHub releases.",
-      "Built with Java, Gradle, JDBC, and SQLite, it provides a dedicated workspace for documenting what changes between versions."
-    ]
-  },
   "skillCategories": {
     "languages": "Languages",
     "frameworks": "Frameworks & Libraries",
@@ -104,5 +87,40 @@
     "description": "Explore the portfolio in your preferred language.",
     "close": "Close language selection",
     "current": "Current language"
+  },
+  "minecraft": {
+    "title": "My mods.",
+    "collection": "Mod collection",
+    "intro": "A few blocks, new ideas, and a world of possibilities. Discover the mods I create for Minecraft.",
+    "explore": "See more",
+    "back": "Back to portfolio",
+    "inventory": "My mod inventory",
+    "visitMod": "View mod",
+    "disclaimer": "An independent creation. Not affiliated with Mojang or Microsoft."
+  },
+  "games": {
+    "title": "Games I create.",
+    "collection": "Independent games",
+    "intro": "Strange worlds, playful experiments, and stories you can step into. Explore my games, from game jam creations to personal projects.",
+    "explore": "Explore the games",
+    "back": "Back to portfolio",
+    "library": "The game library",
+    "play": "View / play on itch.io"
+  },
+  "software": {
+    "title": "Software I build.",
+    "collection": "Software & tools",
+    "intro": "Useful tools, thoughtful interfaces, and small improvements to everyday life. Discover the applications I design and develop.",
+    "explore": "Explore the software",
+    "back": "Back to portfolio",
+    "library": "The application library"
+  },
+  "websites": {
+    "title": "Spaces for the web.",
+    "collection": "Web design & development",
+    "intro": "A place for every idea. Discover the websites I create, where visual identity meets clear navigation and careful development.",
+    "explore": "Explore the websites",
+    "back": "Back to portfolio",
+    "library": "Selected websites"
   }
 }

@@ -14,22 +14,13 @@
       "TypeScript",
       "Tailwind CSS"
     ],
-    "id": "saesth"
-  },
-  {
-    "name": "Slot Addict",
-    "url": "https://onticentity.itch.io/slot-addict",
-    "code": "",
-    "images": [
-      "https://img.itch.zone/aW1hZ2UvNDc1NzI2Ni8yODM2NDIyNS5naWY=/original/X%2B1dST.gif",
-      "https://img.itch.zone/aW1hZ2UvNDc1NzI2Ni8yODM2NDE4MC5naWY=/original/G8y01X.gif"
-    ],
-    "stacks": [
-      "GDScript",
-      "Godot",
-      "Godot 3D"
-    ],
-    "id": "slot-addict"
+    "id": "saesth",
+    "description": {
+      "en": "Saesth is a desktop application for creating a workspace that feels right for you, combining natural ambient sounds with customizable keyboard sounds.\n\nBuild your own sound packs and switch between them to suit your mood, whether you are working, studying, or simply enjoying a quieter moment.\n\nBuilt with Rust, Tauri, and React, the project brings sound customization into a single desktop experience.",
+      "fr": "Saesth est une application de bureau qui permet de créer un espace de travail à votre image, en associant des ambiances sonores naturelles à des sons de clavier personnalisables.\n\nCréez vos propres packs de sons et passez de l’un à l’autre selon votre humeur, que vous travailliez, étudiiez ou profitiez simplement d’un moment de calme.\n\nDéveloppé avec Rust, Tauri et React, le projet réunit la personnalisation sonore dans une seule application de bureau.",
+      "de": "Saesth ist eine Desktop-Anwendung, mit der Sie eine passende Arbeitsatmosphäre schaffen können. Sie verbindet natürliche Umgebungsgeräusche mit anpassbaren Tastaturklängen.\n\nErstellen Sie eigene Klangpakete und wechseln Sie je nach Stimmung zwischen ihnen – beim Arbeiten, Lernen oder in einem ruhigen Moment.\n\nDas mit Rust, Tauri und React entwickelte Projekt vereint die individuelle Klanggestaltung in einer einzigen Desktop-Anwendung.",
+      "pl": "Saesth to aplikacja desktopowa, która pomaga stworzyć dopasowaną do Ciebie atmosferę pracy, łącząc naturalne dźwięki otoczenia z konfigurowalnymi dźwiękami klawiatury.\n\nTwórz własne zestawy dźwięków i zmieniaj je w zależności od nastroju — podczas pracy, nauki lub chwili odpoczynku.\n\nProjekt stworzony w Rust, Tauri i React łączy personalizację dźwięku w jednej aplikacji desktopowej."
+    }
   },
   {
     "name": "Patcher",
@@ -45,6 +36,31 @@
       "JDBC",
       "SQLite3"
     ],
-    "id": "patcher"
+    "id": "patcher",
+    "description": {
+      "en": "Patcher is a desktop application for Windows and Linux that helps you write and organize release notes in Markdown.\n\nCreate different types of release notes for your projects, with a focus on preparing updates for GitHub releases.\n\nBuilt with Java, Gradle, JDBC, and SQLite, it provides a dedicated workspace for documenting what changes between versions.",
+      "fr": "Patcher est une application de bureau pour Windows et Linux qui aide à rédiger et à organiser des notes de version en Markdown.\n\nCréez différents types de notes de version pour vos projets, notamment pour préparer vos publications sur GitHub.\n\nDéveloppée avec Java, Gradle, JDBC et SQLite, elle offre un espace dédié à la documentation des changements entre les versions.",
+      "de": "Patcher ist eine Desktop-Anwendung für Windows und Linux, die beim Schreiben und Organisieren von Versionshinweisen in Markdown hilft.\n\nErstellen Sie verschiedene Arten von Versionshinweisen für Ihre Projekte, insbesondere zur Vorbereitung von Veröffentlichungen auf GitHub.\n\nDie mit Java, Gradle, JDBC und SQLite entwickelte Anwendung bietet einen eigenen Arbeitsbereich, um Änderungen zwischen Versionen zu dokumentieren.",
+      "pl": "Patcher to aplikacja desktopowa dla systemów Windows i Linux, która pomaga pisać i porządkować informacje o wydaniach w formacie Markdown.\n\nTwórz różne rodzaje informacji o wydaniach dla swoich projektów, ze szczególnym uwzględnieniem przygotowania publikacji na GitHubie.\n\nAplikacja zbudowana z użyciem Javy, Gradle, JDBC i SQLite zapewnia osobną przestrzeń do dokumentowania zmian między wersjami."
+    }
+  },
+  {
+    "name": "Clipless",
+    "url": "",
+    "code": "https://github.com/jakubaszcz/Clipless",
+    "images": [
+      "/projects/clipless/screen_one.png"
+    ],
+    "stacks": [
+      "Rust",
+      "JDBC"
+    ],
+    "id": "clipless",
+    "description": {
+      "en": "Clipless is a tool for capturing and keeping useful copied content.",
+      "fr": "Clipless est un outil pour capturer et conserver les contenus copiés utiles.",
+      "de": "Clipless ist ein Werkzeug zum Erfassen und Aufbewahren nützlicher kopierter Inhalte.",
+      "pl": "Clipless to narzędzie do przechwytywania i zachowywania przydatnych skopiowanych treści."
+    }
   }
 ]

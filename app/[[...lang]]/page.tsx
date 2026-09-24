@@ -9,18 +9,27 @@ import {Contact} from "@/app/components/contact/Contact";
 import {Footer} from "@/app/components/footer/Footer";
 import { notFound } from "next/navigation";
 import { getDictionary } from "@/app/i18n/dictionaries";
-import { defaultLocale, localeCodes, localeFromSegments } from "@/app/i18n/config";
+import { collectionPages, defaultLocale, localeCodes, pageFromSegments } from "@/app/i18n/config";
+import { GamesPage } from "@/app/components/games/Games";
+import { CollectionPage } from "@/app/components/collections/Collection";
+import { MinecraftPage } from "@/app/components/minecraft/Minecraft";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return localeCodes.map((locale) => ({ lang: locale === defaultLocale ? [] : [locale] }));
+  return localeCodes.flatMap((locale) => {
+    const prefix = locale === defaultLocale ? [] : [locale];
+    return [{ lang: prefix }, ...collectionPages.map(page => ({ lang: [...prefix, page] }))];
+  });
 }
 
 export default async function Home({ params }: PageProps<"/[[...lang]]">) {
-  const locale = localeFromSegments((await params).lang);
+  const { locale, page } = pageFromSegments((await params).lang);
   if (!locale) notFound();
   const dictionary = await getDictionary(locale);
+  if (page === "minecraft") return <MinecraftPage dictionary={dictionary} locale={locale} />;
+  if (page === "games") return <GamesPage dictionary={dictionary} locale={locale} />;
+  if (page === "software" || page === "websites") return <CollectionPage kind={page} dictionary={dictionary} locale={locale} />;
   return (
       <div className="min-h-dvh bg-radial-[at_50%_20%] from-primary-700 via-primary-900 to-primary-950">
       <Header dictionary={dictionary} locale={locale} />
@@ -31,7 +40,7 @@ export default async function Home({ params }: PageProps<"/[[...lang]]">) {
         <Divider />
         <Path dictionary={dictionary}/>
         <Divider />
-        <Projects dictionary={dictionary}/>
+        <Projects dictionary={dictionary} locale={locale}/>
         <Divider />
         <Skills dictionary={dictionary}/>
         <Divider />

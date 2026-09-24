@@ -77,23 +77,6 @@
       "description": "Stage en développement web consacré à KinéDuQuotidien, une application pour les kinésithérapeutes, avec React et TypeScript."
     }
   },
-  "projectDescriptions": {
-    "saesth": [
-      "Saesth est une application de bureau qui permet de créer un espace de travail à votre image, en associant des ambiances sonores naturelles à des sons de clavier personnalisables.",
-      "Créez vos propres packs de sons et passez de l’un à l’autre selon votre humeur, que vous travailliez, étudiiez ou profitiez simplement d’un moment de calme.",
-      "Développé avec Rust, Tauri et React, le projet réunit la personnalisation sonore dans une seule application de bureau."
-    ],
-    "slot-addict": [
-      "Un jeu d’horreur dans lequel vous incarnez une personne rongée par son addiction aux machines à sous, piégée dans un rêve façonné par cette obsession.",
-      "Cherchez des pièces, tirez le levier et continuez à jouer, tandis qu’une présence transforme ce rituel familier en menace.",
-      "Créé avec Godot et GDScript, le jeu explore la tension entre l’envie de jouer et la part de vous qui voudrait arrêter."
-    ],
-    "patcher": [
-      "Patcher est une application de bureau pour Windows et Linux qui aide à rédiger et à organiser des notes de version en Markdown.",
-      "Créez différents types de notes de version pour vos projets, notamment pour préparer vos publications sur GitHub.",
-      "Développée avec Java, Gradle, JDBC et SQLite, elle offre un espace dédié à la documentation des changements entre les versions."
-    ]
-  },
   "skillCategories": {
     "languages": "Langages",
     "frameworks": "Frameworks et bibliothèques",
@@ -104,5 +87,40 @@
     "description": "Découvrez le portfolio dans la langue de votre choix.",
     "close": "Fermer le choix de langue",
     "current": "Langue actuelle"
+  },
+  "minecraft": {
+    "title": "Mes mods.",
+    "collection": "Collection de mods",
+    "intro": "Quelques blocs, de nouvelles idées et un monde de possibilités. Découvrez les mods que je crée pour Minecraft.",
+    "explore": "Voir plus",
+    "back": "Retour au portfolio",
+    "inventory": "Mon inventaire de mods",
+    "visitMod": "Voir le mod",
+    "disclaimer": "Une création indépendante, sans affiliation avec Mojang ou Microsoft."
+  },
+  "games": {
+    "title": "Mes jeux vid?o.",
+    "collection": "Jeux ind?pendants",
+    "intro": "Des mondes ?tranges, des exp?riences ludiques et des histoires ? vivre. D?couvrez mes jeux, des cr?ations de game jam aux projets personnels.",
+    "explore": "D?couvrir les jeux",
+    "back": "Retour au portfolio",
+    "library": "La biblioth?que de jeux",
+    "play": "Voir / jouer sur itch.io"
+  },
+  "software": {
+    "title": "Mes logiciels.",
+    "collection": "Logiciels et outils",
+    "intro": "Des outils utiles, des interfaces réfléchies et de petites améliorations au quotidien. Découvrez les applications que je conçois et développe.",
+    "explore": "Découvrir les logiciels",
+    "back": "Retour au portfolio",
+    "library": "La bibliothèque d’applications"
+  },
+  "websites": {
+    "title": "Des espaces pour le web.",
+    "collection": "Création de sites web",
+    "intro": "Un espace pour chaque idée. Découvrez les sites que je crée, où l’identité visuelle rencontre une navigation claire et un développement soigné.",
+    "explore": "Découvrir les sites",
+    "back": "Retour au portfolio",
+    "library": "Une sélection de sites"
   }
 }

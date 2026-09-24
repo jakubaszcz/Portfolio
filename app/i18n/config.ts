@@ -13,8 +13,18 @@ export function isLocale(value: string): value is Locale {
     return Object.hasOwn(locales, value);
 }
 
-export function localePath(locale: Locale) {
-    return locale === defaultLocale ? "/" : `/${locale}`;
+export const collectionPages = ["minecraft", "games", "software", "websites"] as const;
+export type CollectionPage = typeof collectionPages[number];
+
+export function localePath(locale: Locale, page?: CollectionPage) {
+    const prefix = locale === defaultLocale ? "" : `/${locale}`;
+    return `${prefix}${page ? `/${page}` : ""}` || "/";
+}
+
+export function pageFromSegments(segments?: string[]) {
+    const page = collectionPages.find(page => page === segments?.at(-1));
+    const locale = localeFromSegments(page ? segments?.slice(0, -1) : segments);
+    return { locale, page };
 }
 
 export function localeFromSegments(segments?: string[]): Locale | undefined {

@@ -77,23 +77,6 @@
       "description": "Praktikum in der Webentwicklung mit Schwerpunkt auf KinéDuQuotidien, einer Anwendung für Physiotherapeuten, mit React und TypeScript."
     }
   },
-  "projectDescriptions": {
-    "saesth": [
-      "Saesth ist eine Desktop-Anwendung, mit der Sie eine passende Arbeitsatmosphäre schaffen können. Sie verbindet natürliche Umgebungsgeräusche mit anpassbaren Tastaturklängen.",
-      "Erstellen Sie eigene Klangpakete und wechseln Sie je nach Stimmung zwischen ihnen – beim Arbeiten, Lernen oder in einem ruhigen Moment.",
-      "Das mit Rust, Tauri und React entwickelte Projekt vereint die individuelle Klanggestaltung in einer einzigen Desktop-Anwendung."
-    ],
-    "slot-addict": [
-      "Ein Horrorspiel, in dem Sie eine von der Spielsucht beherrschte Person verkörpern, gefangen in einem Traum, der von der Besessenheit mit einem Spielautomaten geprägt ist.",
-      "Suchen Sie nach Münzen, ziehen Sie am Hebel und spielen Sie weiter, während etwas in Ihrer Nähe das vertraute Ritual in eine Bedrohung verwandelt.",
-      "Das mit Godot und GDScript entwickelte Spiel erkundet die Spannung zwischen dem Drang zu spielen und dem Teil von Ihnen, der aufhören möchte."
-    ],
-    "patcher": [
-      "Patcher ist eine Desktop-Anwendung für Windows und Linux, die beim Schreiben und Organisieren von Versionshinweisen in Markdown hilft.",
-      "Erstellen Sie verschiedene Arten von Versionshinweisen für Ihre Projekte, insbesondere zur Vorbereitung von Veröffentlichungen auf GitHub.",
-      "Die mit Java, Gradle, JDBC und SQLite entwickelte Anwendung bietet einen eigenen Arbeitsbereich, um Änderungen zwischen Versionen zu dokumentieren."
-    ]
-  },
   "skillCategories": {
     "languages": "Programmiersprachen",
     "frameworks": "Frameworks & Bibliotheken",
@@ -104,5 +87,40 @@
     "description": "Entdecken Sie das Portfolio in Ihrer bevorzugten Sprache.",
     "close": "Sprachauswahl schließen",
     "current": "Aktuelle Sprache"
+  },
+  "minecraft": {
+    "title": "Meine Mods.",
+    "collection": "Mod-Sammlung",
+    "intro": "Ein paar Blöcke, neue Ideen und eine Welt voller Möglichkeiten. Entdecke die Mods, die ich für Minecraft entwickle.",
+    "explore": "Mehr entdecken",
+    "back": "Zurück zum Portfolio",
+    "inventory": "Mein Mod-Inventar",
+    "visitMod": "Mod ansehen",
+    "disclaimer": "Ein unabhängiges Projekt. Nicht mit Mojang oder Microsoft verbunden."
+  },
+  "games": {
+    "title": "Meine Videospiele.",
+    "collection": "Unabh?ngige Spiele",
+    "intro": "Seltsame Welten, spielerische Experimente und Geschichten zum Erleben. Entdecke meine Spiele, von Game-Jam-Beitr?gen bis zu pers?nlichen Projekten.",
+    "explore": "Spiele entdecken",
+    "back": "Zur?ck zum Portfolio",
+    "library": "Die Spielbibliothek",
+    "play": "Auf itch.io ansehen / spielen"
+  },
+  "software": {
+    "title": "Meine Software.",
+    "collection": "Software und Werkzeuge",
+    "intro": "Nützliche Werkzeuge, durchdachte Oberflächen und kleine Verbesserungen für den Alltag. Entdecke die Anwendungen, die ich gestalte und entwickle.",
+    "explore": "Software entdecken",
+    "back": "Zurück zum Portfolio",
+    "library": "Die Anwendungsbibliothek"
+  },
+  "websites": {
+    "title": "Räume für das Web.",
+    "collection": "Webdesign und Entwicklung",
+    "intro": "Ein Ort für jede Idee. Entdecke meine Websites, die visuelle Identität mit klarer Navigation und sorgfältiger Entwicklung verbinden.",
+    "explore": "Websites entdecken",
+    "back": "Zurück zum Portfolio",
+    "library": "Ausgewählte Websites"
   }
 }
