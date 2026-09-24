@@ -1,5 +1,13 @@
 import type { TranslationProps } from "@/app/i18n/dictionaries";
 import skills from "@/app/data/skills/skills.json";
+import { Code2, Layers3, Wrench } from "lucide-react";
+import styles from "./Skills.module.css";
+
+const themes = {
+    languages: { className: styles.languages, Icon: Code2 },
+    frameworks: { className: styles.frameworks, Icon: Layers3 },
+    tools: { className: styles.tools, Icon: Wrench },
+};
 
 export function Skills({ dictionary } : TranslationProps) {
     const t = dictionary.ui;
@@ -11,21 +19,23 @@ export function Skills({ dictionary } : TranslationProps) {
                 <p className="mt-3 text-sm leading-7 text-primary-200 sm:text-base">{t.skillsDescription}</p>
             </div>
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-                {skills.map((category, index) => (
-                    <article key={category.id} className="min-w-0 rounded-md border border-primary-700 bg-primary-900 p-6 transition-colors sm:p-8">
-                        <div className="mb-6 flex items-start justify-between gap-4 border-b border-primary-200 pb-5">
-                            <h3 className="font-primary text-2xl leading-snug text-primary-100">{dictionary.skillCategories[category.id as keyof typeof dictionary.skillCategories]}</h3>
-                            <span aria-hidden="true" className="pt-1 text-xs tabular-nums text-primary-300">{String(index + 1).padStart(2, "0")}</span>
+                {skills.map((category) => {
+                    const theme = themes[category.id as keyof typeof themes] ?? themes.languages;
+                    const Icon = theme.Icon;
+                    return <article key={category.id} className={`${styles.card} ${theme.className}`}>
+                        <div className={styles.topline}><span className={styles.icon}><Icon size={24} aria-hidden="true" /></span><span className={styles.count} aria-hidden="true">{String(category.skills.length).padStart(2, "0")}</span></div>
+                        <div className={styles.heading}>
+                            <h3>{dictionary.skillCategories[category.id as keyof typeof dictionary.skillCategories]}</h3>
                         </div>
                         <ul className="flex flex-wrap gap-2.5">
                             {category.skills.map((skill) => (
-                                <li key={skill} className="max-w-full break-words rounded-sm border border-primary-700 px-3 py-2 text-sm leading-5 text-primary-200 transition-colors">
+                                <li key={skill} className={styles.skill}>
                                     {skill}
                                 </li>
                             ))}
                         </ul>
-                    </article>
-                ))}
+                    </article>;
+                })}
             </div>
         </section>
     );
