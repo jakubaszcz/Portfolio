@@ -1,23 +1,15 @@
 import type { TranslationProps } from "@/app/i18n/dictionaries";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, ArrowUpRight } from "lucide-react";
 import contact from "@/app/data/contact/contact.json";
+import styles from "@/app/components/home/Home.module.css";
 
-export function Footer({ dictionary } : TranslationProps) {
+export function Footer({ dictionary }: TranslationProps) {
     const t = dictionary.ui;
-    return (
-        <footer className="mt-8 bg-primary-950">
-            <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-8 sm:px-10 lg:flex-row lg:items-center lg:justify-between">
-                <div>
-                    <a href="#home" className="font-primary text-lg text-primary-100">Jakub Szczucinski<span className="text-primary-400">.</span></a>
-                    <p className="mt-2 text-xs text-primary-300">© {new Date().getFullYear()} Jakub Szczucinski. {t.rights}</p>
-                </div>
-                <nav aria-label={t.footerNavigation} className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-primary-200">
-                    {contact.socials.filter((social) => social.url).map((social) => (
-                        <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={`${social.name} (${t.newTab})`} className="py-2 transition-colors hover:text-primary-50">{social.name}</a>
-                    ))}
-                    <a href="#home" className="inline-flex min-h-11 items-center gap-2 rounded-sm border border-primary-700 px-4 transition-colors hover:border-primary-400 hover:bg-primary-900">{t.backToTop} <ArrowUp size={16} aria-hidden="true" /></a>
-                </nav>
-            </div>
-        </footer>
-    );
+    return <footer className={styles.footer}>
+        <div className={styles.footerInner}>
+            <div className={styles.footerTop}><div><p className={styles.footerKicker}>{t.contact}</p><h2>{t.contactTitle}</h2></div><a href="#contact" className={styles.footerCta}>{t.contact}<ArrowUpRight size={24} aria-hidden="true" /></a></div>
+            <div className={styles.footerMiddle}><a href="#home" className={styles.footerSignature}>Jakub Szczucinski.</a><nav aria-label={t.footerNavigation} className={styles.footerLinks}>{contact.socials.filter(social => social.url).map(social => <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={`${social.name} (${t.newTab})`}>{social.name}<ArrowUpRight size={15} aria-hidden="true" /></a>)}</nav></div>
+            <div className={styles.footerBottom}><p>© {new Date().getFullYear()} Jakub Szczucinski. {t.rights}</p><a href="#home">{t.backToTop}<ArrowUp size={16} aria-hidden="true" /></a></div>
+        </div>
+    </footer>;
 }

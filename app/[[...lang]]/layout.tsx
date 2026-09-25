@@ -52,7 +52,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[[.
   return (
     <html
       lang={locale}
-      data-theme={page}
+      data-theme={page ?? "portfolio"}
       className={`${primaryFont.variable} ${textFont.variable}`}
     >
       <body className="font-sans">{children}</body>

@@ -41,6 +41,18 @@ body {
   color: var(--foreground);
 }
 
+html[data-theme="portfolio"] {
+  --background: #f7f4ed;
+  --foreground: #263d35;
+  color-scheme: light;
+  scrollbar-color: #9fb09e #f7f4ed;
+}
+
+html[data-theme="portfolio"] ::selection {
+  background: #d7c7ef;
+  color: #263d35;
+}
+
 html[data-theme="minecraft"] {
   --background: #171615;
   --foreground: #ede5e2;

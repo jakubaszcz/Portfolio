@@ -1,25 +1,30 @@
 import type { TranslationProps } from "@/app/i18n/dictionaries";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+import { localePath, type Locale } from "@/app/i18n/config";
+import { collections, collectionOrder } from "@/app/components/collections/registry";
+import styles from "@/app/components/home/Home.module.css";
 
-export function Landing({ dictionary } : TranslationProps) {
+export function Landing({ dictionary, locale }: TranslationProps & { locale: Locale }) {
     const t = dictionary.ui;
-    return (
-        <section id="home" className="hero-landing relative isolate min-h-dvh w-full overflow-hidden">
-            <div className="relative mx-auto flex min-h-dvh w-full max-w-6xl flex-col items-center justify-center px-6 pb-24 pt-36 text-center">
-                <p className="hero-intro mb-8 flex items-center gap-3 text-[10px] uppercase tracking-[0.25em] text-primary-300 sm:text-xs">
-                    <span className="h-px w-8 bg-primary-600" aria-hidden="true" />
-                    {t.portfolio}
-                    <span className="h-px w-8 bg-primary-600" aria-hidden="true" />
-                </p>
-                <h1 className="hero-intro font-primary text-[clamp(1.7rem,7.8vw,6rem)] leading-[1.15] tracking-tight">
-                    <span className="block text-primary-100">Jakub</span>
-                    <span className="mt-2 block text-primary-200">SZCZUCINSKI</span>
-                </h1>
-                <div className="hero-intro mt-10 flex w-full max-w-xs flex-col justify-center gap-3 sm:w-auto sm:max-w-none sm:flex-row sm:flex-wrap">
-                    <a href="#history" className="hero-action secondary-button">{t.aboutMe} <ArrowDown size={17} aria-hidden="true" /></a>
-                    <a href="#projects" className="hero-action primary-button">{t.exploreProjects} <ArrowDown size={17} aria-hidden="true" /></a>
-                </div>
+    return <section id="home" className={styles.landing}>
+        <div className={styles.heroLayout}>
+            <div className={styles.heroText}>
+                <p className={styles.kicker}><span aria-hidden="true" />{t.portfolio}</p>
+                <h1 className={styles.heroName}>Jakub<span>Szczucinski.</span></h1>
+                <p className={styles.heroDescription}>{t.projectsDescription}</p>
+                <div className={styles.heroActions}><a href="#projects" className="primary-button">{t.exploreProjects}<ArrowDown size={17} aria-hidden="true" /></a><a href="#history" className="secondary-button">{t.aboutMe}<ArrowDown size={17} aria-hidden="true" /></a></div>
             </div>
-        </section>
-    )
+            <nav className={styles.heroCollections} aria-label={t.projects}>
+                {collectionOrder.map((kind, index) => {
+                    const { Icon } = collections[kind];
+                    return <Link key={kind} href={localePath(locale, kind)} className={styles.heroTile} data-collection={kind}>
+                        <div className={styles.tileTop}><Icon size={28} strokeWidth={1.5} aria-hidden="true" /><span aria-hidden="true">0{index + 1}</span></div>
+                        <span className={styles.tileLabel}>{dictionary[kind].collection}</span><ArrowUpRight size={20} className={styles.tileArrow} aria-hidden="true" />
+                    </Link>;
+                })}
+            </nav>
+        </div>
+        <div className={styles.heroBottom}><span aria-hidden="true">01 — 04</span><a href="#history">{t.behindCode}<ArrowDown size={16} aria-hidden="true" /></a><span className={styles.palette} aria-hidden="true"><i /><i /><i /><i /></span></div>
+    </section>;
 }

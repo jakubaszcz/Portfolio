@@ -2,6 +2,7 @@ import type { TranslationProps } from "@/app/i18n/dictionaries";
 import contact from "@/app/data/contact/contact.json";
 import { ArrowUpRight, Download, Mail, FileText, Globe2, Code2, Users, Gamepad2 } from "lucide-react";
 import styles from "./Contact.module.css";
+import { SectionHeading } from "@/app/components/home/SectionHeading";
 
 const destinations = {
     "linkedin.com": { theme: styles.linkedin, Icon: Users },
@@ -23,7 +24,7 @@ function destinationStyle(url: string) {
 export function Contact({ dictionary }: TranslationProps) {
     const t = dictionary.ui;
     return <section id="contact" aria-labelledby="contact-title" className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-10 sm:py-16">
-        <h2 id="contact-title" className="mb-8 font-primary text-3xl text-primary-100 sm:mb-10">{t.contact}</h2>
+        <SectionHeading id="contact-title" number="04" label={t.contact} />
         <div className={styles.grid}>
             <div className={`${styles.card} ${styles.letter}`}>
                 <span className={styles.icon}><Mail size={25} aria-hidden="true" /></span>
