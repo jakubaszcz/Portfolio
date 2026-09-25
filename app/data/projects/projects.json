@@ -62,5 +62,44 @@
       "de": "Clipless ist ein leichter, persistenter Zwischenablage-Manager, der entwickelt wurde, um wiederkehrende Arbeitsabläufe zu vereinfachen.\n\nIm Gegensatz zur Standard-Zwischenablage von Windows können Sie mit Clipless kopierte Inhalte langfristig speichern, verwalten und wiederverwenden, ohne befürchten zu müssen, dass sie verloren gehen.",
       "pl": "Clipless to lekki, trwały menedżer schowka, zaprojektowany z myślą o usprawnieniu powtarzalnych procesów pracy.\n\nW przeciwieństwie do domyślnego schowka systemu Windows, Clipless pozwala na przechowywanie, zarządzanie i ponowne wykorzystywanie skopiowanych treści w dłuższej perspektywie czasowej, bez obaw o ich utratę."
     }
+  },
+  {
+    "name": "Code Manager",
+    "url": "",
+    "code": "https://github.com/jakubaszcz/Code-Manager",
+    "images": [
+      "/projects/code-manager/screen_one.png",
+      "/projects/code-manager/screen_two.png"
+    ],
+    "stacks": [
+      "C++",
+      "QT6"
+    ],
+    "id": "code-manager",
+    "description": {
+      "en": "Code Manager is a software program that lets you easily run commands from a single location.\n\nOnce you've selected the environment, you can trigger actions—such as creating files or running commands—while remaining in a different directory.",
+      "fr": "Code Manager est un logiciel permettant d'exécuter facilement des commandes depuis un seul et même endroit.\n\nUne fois l'environnement sélectionné, vous pouvez déclencher des actions, par exemple créer des fichiers ou exécuter des commandes, tout en restant dans un autre répertoire.",
+      "de": "Code Manager ist eine Software, mit der sich Befehle ganz einfach von einem einzigen Ort aus ausführen lassen.\n\nSobald Sie die Umgebung ausgewählt haben, können Sie Aktionen auslösen, beispielsweise Dateien erstellen oder Befehle ausführen, während Sie sich weiterhin in einem anderen Verzeichnis befinden.",
+      "pl": "Code Manager to program umożliwiający łatwe wykonywanie poleceń z jednego miejsca.\n\nPo wybraniu środowiska można uruchamiać działania, na przykład tworzyć pliki lub wykonywać polecenia, pozostając jednocześnie w innym katalogu."
+    }
+  },
+  {
+    "name": "Game of Life",
+    "url": "",
+    "code": "https://github.com/jakubaszcz/Game-Of-Life",
+    "images": [
+      "/projects/game-of-life/video.gif"
+    ],
+    "stacks": [
+      "C++",
+      "OpenGL"
+    ],
+    "id": "game-of-life",
+    "description": {
+      "en": "This is a game adaptation of Conway's Game of Life.\n\nDeveloped in C++ using OpenGL.",
+      "fr": "C'est une représentation de jeu de la vie de Conway.\n\nDéveloppé en C++ avec OpenGL.",
+      "de": "Dies ist eine spielerische Darstellung von Conways „Spiel des Lebens“.\n\nEntwickelt in C++ mit OpenGL.",
+      "pl": "Jest to gra przedstawiająca „Grę w życie” Conwaya.\n\nOpracowana w języku C++ z wykorzystaniem biblioteki OpenGL."
+    }
   }
 ]

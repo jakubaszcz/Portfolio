@@ -105,5 +105,26 @@
       "de": "Du bist ein Samurai, der verzweifelt versucht, nach Hause zurückzukehren.\n\nAuf deinem Weg stehen dir mehrere Feinde im Weg – schalte sie aus, ohne dabei Lärm zu machen!\n\nAber achte auf die Fallen, die überall auf dem Gelände verstreut sind!",
       "pl": "Jesteś samurajem, który desperacko próbuje wrócić do domu.\n\nNa twojej drodze stoi wielu wrogów – pozbądź się ich bezszelestnie!\n\nUważaj jednak na pułapki rozrzucone po terenie!"
     }
+  },
+  {
+    "id": "rpg",
+    "name": "RPG",
+    "url": "",
+    "code": "",
+    "images": [
+      "/games/rpg/screen_one.png",
+      "/games/rpg/screen_two.png",
+      "/games/rpg/screen_three.png"
+    ],
+    "stacks": [
+      "C",
+      "CSFML"
+    ],
+    "description": {
+      "en": "School video game project completed in 2023.\n\nThe goal of the project was to recreate a role-playing game of our choice.\n\nImmerse yourself in the world of Adrien, who, after being sent on a mission to the basement, finds himself face-to-face with monsters. ",
+      "fr": "Projet scolaire de jeu vidéo réalisé en 2023.\n\nL'objectif du projet était de recréer un jeu de rôle de notre choix.\n\nPlongez dans l'univers d'Adrien qui, après avoir reçu pour mission de se rendre dans la cave, se retrouve face à face avec des monstres.",
+      "de": "Schulprojekt zum Thema Videospiele aus dem Jahr 2023.\n\nZiel des Projekts war es, ein Rollenspiel unserer Wahl nachzubilden.\n\nTaucht ein in die Welt von Adrien, der, nachdem er den Auftrag erhalten hat, in den Keller zu gehen, plötzlich Monstern gegenübersteht.",
+      "pl": "Szkolny projekt gry wideo zrealizowany w 2023 roku.\n\nCelem projektu było odtworzenie wybranej przez nas gry RPG.\n\nZanurz się w świecie Adriena, który po otrzymaniu zadania udania się do piwnicy staje twarzą w twarz z potworami."
+    }
   }
 ]
