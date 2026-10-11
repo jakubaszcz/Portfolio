@@ -1,5 +1,28 @@
 [
   {
+    "name": "Wist",
+    "url": "",
+    "code": "https://github.com/jakubaszcz/Widget",
+    "images": [
+      "/projects/wist/screen_one.png"
+    ],
+    "stacks": [
+      "Rust",
+      "SDK",
+      "Tauri",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "id": "wist",
+    "description": {
+      "en": "Customize your Windows desktop with Wist. Create your own widgets or use the Wist SDK to connect your apps and bring their content and controls directly to your desktop.",
+      "fr": "Personnalisez votre bureau Windows avec Wist. Créez vos propres widgets ou utilisez le SDK Wist pour connecter vos applications et afficher directement leur contenu et leurs commandes sur votre bureau.",
+      "de": "Passen Sie Ihren Windows-Desktop mit Wist individuell an. Erstellen Sie Ihre eigenen Widgets oder nutzen Sie das Wist-SDK, um Ihre Apps anzubinden und deren Inhalte und Steuerelemente direkt auf Ihren Desktop zu bringen.",
+      "pl": "Dostosuj pulpit systemu Windows za pomocą aplikacji Wist. Twórz własne widżety lub skorzystaj z zestawu SDK Wist, aby połączyć swoje aplikacje i wyświetlać ich zawartość oraz elementy sterujące bezpośrednio na pulpicie."
+    }
+  },
+  {
     "name": "Saesth",
     "url": "https://www.saesth.com",
     "code": "https://github.com/jakubaszcz/Saesth",
